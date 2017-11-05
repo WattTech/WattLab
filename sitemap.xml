@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://wattlab.net/test1/creating-a-new-theme/</loc>
+    <loc>http://wattlab.net/test1/creating-a-new-theme1/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -18,8 +18,13 @@
   </url>
   
   <url>
+    <loc>http://wattlab.net/links/</loc>
+    <lastmod>2017-11-05T12:49:26+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://wattlab.net/about/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-05T12:50:15+08:00</lastmod>
   </url>
   
   <url>
@@ -38,13 +43,13 @@
   </url>
   
   <url>
-    <loc>http://wattlab.net/categories/development/</loc>
+    <loc>http://wattlab.net/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://wattlab.net/tags/development/</loc>
+    <loc>http://wattlab.net/categories/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -56,13 +61,13 @@
   </url>
   
   <url>
-    <loc>http://wattlab.net/categories/golang/</loc>
+    <loc>http://wattlab.net/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://wattlab.net/tags/golang/</loc>
+    <loc>http://wattlab.net/categories/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
