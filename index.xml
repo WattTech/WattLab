@@ -40,6 +40,20 @@
     </item>
     
     <item>
+      <title>Template</title>
+      <link>http://www.WattLab.net/template/</link>
+      <pubDate>Sun, 28 Oct 2018 10:38:47 +0800</pubDate>
+      
+      <guid>http://www.WattLab.net/template/</guid>
+      <description>&lt;p&gt;我其实不想用任何的格式, 来修饰我的文字.&lt;/p&gt;
+
+&lt;p&gt;加入超链接
+&lt;a href=&#34;http://wattlab.net&#34;&gt;WattLab.net&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>如何使用Hugo管理这个网站</title>
       <link>http://www.WattLab.net/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E7%AE%A1%E7%90%86%E8%BF%99%E4%B8%AA%E7%BD%91%E7%AB%99/</link>
       <pubDate>Sun, 28 Oct 2018 10:38:47 +0800</pubDate>
