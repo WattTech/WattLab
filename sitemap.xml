@@ -14,7 +14,6 @@
   
   <url>
     <loc>http://www.WattLab.net/template/</loc>
-    <lastmod>2018-10-28T10:38:47+08:00</lastmod>
   </url>
   
   <url>
@@ -29,25 +28,21 @@
   
   <url>
     <loc>http://www.WattLab.net/tags/development/</loc>
-    <lastmod>2018-10-28T10:38:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.WattLab.net/tags/hugo/</loc>
-    <lastmod>2018-10-28T10:38:47+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.WattLab.net/categories/hugo/</loc>
-    <lastmod>2018-10-28T10:38:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.WattLab.net/tags/</loc>
-    <lastmod>2018-10-28T10:38:47+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.WattLab.net/categories/tutorials/</loc>
     <priority>0</priority>
   </url>
   
