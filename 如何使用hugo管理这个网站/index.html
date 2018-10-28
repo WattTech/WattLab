@@ -8,7 +8,7 @@
 
 <meta name="description" content="">
 
-<title>写在前面</title>
+<title>如何使用Hugo管理这个网站</title>
 <meta name="generator" content="Hugo 0.30.2" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/pojoaque.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
@@ -66,31 +66,78 @@
 </div>
 <div class="col-md-9 content">
 
-<h1>写在前面</h1>
-<h4>Published 11-05-2017 17:40:55</h4>
+<h1>如何使用Hugo管理这个网站</h1>
+<h4>Published 10-28-2018 10:38:47</h4>
 
 <article>
-    <p>去年毕业，到现在已经一年有余了。</p>
+    
 
-<p>毕业的时候不想去电网，觉着电网混吃等死，没有意义。像我这样的穷小子，本来就什么都没有，不如就任性的闯一闯，反正结果也不会差到哪里去——自己养活自己肯定还是没问题的。</p>
+<h3 id="安装hugo">安装Hugo</h3>
 
-<p>于是来到了台达。</p>
+<p>从此处下载二级制文件安装.<a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a></p>
 
-<p>前两个月过的还算顺畅，基本没有安排任务，就是把电路图拿出来看了一遍。说是看了一遍，起始很多地方都没有细算，大体的缕一缕结构就放到那了。</p>
+<h3 id="使用hugo">使用Hugo</h3>
 
-<p>后来忙了一点点，但关键性的活都不是我做，我就负责给机器上电，看一下工作或者故障情况，如果故障了，把机器拆开，放平，关键信号用探头勾出来，让老工程师分析，跟着学习。</p>
+<p>打开网站要放置的文件夹,直接选择</p>
 
-<p>然后是解Thermal，把变压器，电感，半导体的温度用热耦线点出来，放在Chamber里跑，看最高能到多少度，能不能满足derating。变压器core热或者wire热，我都不知道如何处理，只能拿着数据去找老大，让他给建议。按他的建议，再点热耦线，再测，反反复复测了很久。</p>
+<pre><code>&gt;hugo new site yoursite
+Congratulations! Your new Hugo site is created in x:\xx\yoursite.
+Just a few more steps and you're ready to go:
 
-<p>进步的很缓慢，我甚至觉着自己什么都没干，公司就每个月给我发了工资。工作的积极性呢，说高不高，总觉着自己没什么实力，做什么事情都不敢自己拿决定，要去咨询老工程师，得到他们的首肯，才敢做。老工程师们就开始变的不耐烦：同事帮你是情谊，不帮你也正常。</p>
+1. Download a theme into the same-named folder.
+   Choose a theme from https://themes.gohugo.io/, or
+   create your own with the &quot;hugo new theme &lt;THEMENAME&gt;&quot; command.
+2. Perhaps you want to add some content. You can add single files
+   with &quot;hugo new &lt;SECTIONNAME&gt;\&lt;FILENAME&gt;.&lt;FORMAT&gt;&quot;.
+3. Start the built-in live server via &quot;hugo server&quot;.
 
-<p>天天做这些事儿，总觉着不踏实，人是飘着的，说是电源工程师，既不熟悉拓扑，也不熟悉器件，管子不会选，变压器电感不会设计，控制电路也是一踏糊涂。</p>
+Visit https://gohugo.io/ for quickstart guide and full documentation.
+</code></pre>
 
-<p>而且我发现，很多人对这些都是一知半解。。</p>
+<p>按照上面的提示安装就好了</p>
 
-<p>但这并不妨碍他们做电源，一个部门里有上两三个头脑清醒，思维清晰的人，就可以撑着往前运转了。</p>
+<h5 id="目录结构">目录结构</h5>
 
-<p>如果决定都让别人做，你的作用是什么呢，不动脑子，机械的执行？执行力固然重要，但背后的思维更重要，这也是为什么会有这个网站的原因。</p>
+<p>命令执行后创建项目目录，其中的目录结构为<br />
+yoursite<br />
+├─archetypes<br />
+├─content<br />
+├─data<br />
+├─layouts<br />
+├─static<br />
+├─themes<br />
+└─config.toml</p>
+
+<p>config.toml 是网站的配置文件，hugo 同时还支持 YAML 格式的 config.yaml 或 JSON 格式的 config.json。content 目录放 markdown 文章，data 目录放数据，layouts 目录放网站模板文件，static 目录放图片、css、js 等静态资源，themes 命令放下载的主题。</p>
+
+<h3 id="使用hugo-1">使用Hugo</h3>
+
+<p>创建新的文章,使用命令</p>
+
+<pre><code>&gt;hugo new XX.md
+</code></pre>
+
+<p>会在 content 目录中创建这个 XX.md 文件.按照markdown格式编辑就好了.</p>
+
+<h3 id="生成静态网页">生成静态网页</h3>
+
+<p>需要生成静态网页, 上传至GitHub,使用命令</p>
+
+<pre><code>&gt;hugo --theme=hugo-bootstrap --baseUrl=&quot;https://blog.kikakika.com&quot;
+</code></pre>
+
+<p>为了简便,也可以直接使用命令</p>
+
+<pre><code>&gt;hugo
+</code></pre>
+
+<p>yoursite文件目录下会生成public文件夹,将这个文件夹内容push到GitHub即可</p>
+
+<h3 id="tips">Tips</h3>
+
+<ol>
+<li>如何在首页不显示全文: 使用&lt;!&ndash;more&ndash;&gt;命令, 放在你想放置的地方</li>
+</ol>
 
 </article>
 

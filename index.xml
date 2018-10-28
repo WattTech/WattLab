@@ -45,12 +45,14 @@
     </item>
     
     <item>
-      <title>About</title>
-      <link>http://www.WattLab.net/about/</link>
+      <title>如何使用Hugo管理这个网站</title>
+      <link>http://www.WattLab.net/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E7%AE%A1%E7%90%86%E8%BF%99%E4%B8%AA%E7%BD%91%E7%AB%99/</link>
       <pubDate>Sun, 28 Oct 2018 10:38:47 +0800</pubDate>
       
-      <guid>http://www.WattLab.net/about/</guid>
-      <description></description>
+      <guid>http://www.WattLab.net/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E7%AE%A1%E7%90%86%E8%BF%99%E4%B8%AA%E7%BD%91%E7%AB%99/</guid>
+      <description>安装Hugo 从此处下载二级制文件安装.https://github.com/gohugoio/hugo/releases
+使用Hugo 打开网站要放置的文件夹,直接选择
+&amp;gt;hugo new site yoursite Congratulations! Your new Hugo site is created in x:\xx\yoursite. Just a few more steps and you&#39;re ready to go: 1. Download a theme into the same-named folder. Choose a theme from https://themes.gohugo.io/, or create your own with the &amp;quot;hugo new theme &amp;lt;THEMENAME&amp;gt;&amp;quot; command. 2. Perhaps you want to add some content. You can add single files with &amp;quot;hugo new &amp;lt;SECTIONNAME&amp;gt;\&amp;lt;FILENAME&amp;gt;.&amp;lt;FORMAT&amp;gt;&amp;quot;. 3. Start the built-in live server via &amp;quot;hugo server&amp;quot;.</description>
     </item>
     
   </channel>
