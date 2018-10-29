@@ -17,14 +17,13 @@
       <pubDate>Sun, 28 Oct 2018 11:40:55 +0800</pubDate>
       
       <guid>http://www.WattLab.net/template/</guid>
-      <description>&lt;p&gt;我其实不想用任何的格式, 来修饰我的文字.&lt;/p&gt;
-
-&lt;p&gt;加入超链接&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[WattLab.net](http://wattlab.net)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://wattlab.net&#34;&gt;WattLab.net&lt;/a&gt;&lt;/p&gt;</description>
+      <description>我其实不想用任何的格式, 来修饰我的文字.
+加入超链接
+[WattLab.net](http://wattlab.net)  WattLab.net
+分割文章在主页的显示
+&amp;lt;!&amp;ndash;more&amp;ndash;&amp;gt;
+可以尝试下面的方式插入图片
+&amp;lt;img src=&amp;quot;https://xxx.com/1.png&amp;quot; width=&amp;quot;50%&amp;quot; height=&amp;quot;50%&amp;quot; div align = left /&amp;gt;  Figure 2. 波形 切载后,由于两个模块BUS电压的不同,会导致出力不同.</description>
     </item>
     
   </channel>
