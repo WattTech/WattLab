@@ -6,7 +6,7 @@
     <description>Recent content in Tags on WattLab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 28 Oct 2018 11:40:57 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 30 Oct 2018 07:21:03 +0800</lastBuildDate>
     
 	<atom:link href="http://www.WattLab.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Development</title>
       <link>http://www.WattLab.net/tags/development/</link>
-      <pubDate>Sun, 28 Oct 2018 11:40:57 +0800</pubDate>
+      <pubDate>Tue, 30 Oct 2018 07:21:03 +0800</pubDate>
       
       <guid>http://www.WattLab.net/tags/development/</guid>
       <description></description>
@@ -26,6 +26,42 @@
       <pubDate>Sun, 28 Oct 2018 11:40:57 +0800</pubDate>
       
       <guid>http://www.WattLab.net/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Llc</title>
+      <link>http://www.WattLab.net/tags/llc/</link>
+      <pubDate>Tue, 30 Oct 2018 07:21:03 +0800</pubDate>
+      
+      <guid>http://www.WattLab.net/tags/llc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Megnetism</title>
+      <link>http://www.WattLab.net/tags/megnetism/</link>
+      <pubDate>Tue, 30 Oct 2018 07:21:01 +0800</pubDate>
+      
+      <guid>http://www.WattLab.net/tags/megnetism/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Smps</title>
+      <link>http://www.WattLab.net/tags/smps/</link>
+      <pubDate>Tue, 30 Oct 2018 07:21:03 +0800</pubDate>
+      
+      <guid>http://www.WattLab.net/tags/smps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Topology</title>
+      <link>http://www.WattLab.net/tags/topology/</link>
+      <pubDate>Tue, 30 Oct 2018 07:21:03 +0800</pubDate>
+      
+      <guid>http://www.WattLab.net/tags/topology/</guid>
       <description></description>
     </item>
     

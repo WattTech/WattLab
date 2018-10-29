@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>磁 on WattLab</title>
+    <link>http://www.WattLab.net/categories/%E7%A3%81/</link>
+    <description>Recent content in 磁 on WattLab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 30 Oct 2018 07:21:03 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.WattLab.net/categories/%E7%A3%81/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>软开关</title>
+      <link>http://www.WattLab.net/20181030-%E6%8B%93%E6%89%91/</link>
+      <pubDate>Tue, 30 Oct 2018 07:21:03 +0800</pubDate>
+      
+      <guid>http://www.WattLab.net/20181030-%E6%8B%93%E6%89%91/</guid>
+      <description> 二极管的反向恢复特性 纯电阻负载时的MOSFET开关特性 snabber active-clamp PWM 软开关 ​  </description>
+    </item>
+    
+    <item>
+      <title>磁</title>
+      <link>http://www.WattLab.net/20181030-%E7%A3%81/</link>
+      <pubDate>Tue, 30 Oct 2018 07:21:01 +0800</pubDate>
+      
+      <guid>http://www.WattLab.net/20181030-%E7%A3%81/</guid>
+      <description>自感与互感
+理想变压器
+磁路的定理, 安培环路定理, 法拉第电磁感应定律
+变压器是如何储存能量和传递能量的 漏感与励磁电感 变压器的电压和电流, 之间的因果关系
+集肤效应 临近效应</description>
+    </item>
+    
+  </channel>
+</rss>
