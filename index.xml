@@ -42,7 +42,7 @@
     <item>
       <title>Template</title>
       <link>http://www.WattLab.net/template/</link>
-      <pubDate>Sun, 28 Oct 2018 11:40:56 +0800</pubDate>
+      <pubDate>Sun, 28 Oct 2018 11:40:57 +0800</pubDate>
       
       <guid>http://www.WattLab.net/template/</guid>
       <description>我其实不想用任何的格式, 来修饰我的文字.
@@ -53,6 +53,7 @@
 可以尝试下面的方式插入图片
 &amp;lt;img src=&amp;quot;https://xxx.com/1.png&amp;quot; width=&amp;quot;50%&amp;quot; height=&amp;quot;50%&amp;quot; /&amp;gt; Figure 2. 波形 切载后,由于两个模块BUS电压的不同,会导致出力不同. 
 J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha}
+
  </description>
     </item>
     
