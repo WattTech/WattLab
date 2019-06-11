@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Smps on WattLab</title>
-    <link>http://www.WattLab.net/tags/smps/</link>
-    <description>Recent content in Smps on WattLab</description>
+    <title>Daily Report on WattLab</title>
+    <link>http://www.WattLab.net/categories/daily-report/</link>
+    <description>Recent content in Daily Report on WattLab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 11 Jun 2019 22:19:14 +0800</lastBuildDate>
     
-	<atom:link href="http://www.WattLab.net/tags/smps/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.WattLab.net/categories/daily-report/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -25,37 +25,6 @@ Cgd的非线性在Vds电压低时较大，对驱动损耗而言，开通时刻Vd
 ####高频时的类Droop特性是否有作用
 主要思想是，在高频时，由于输入电流较大，在输入Vcc电源上串入小电阻，电流大时电阻上压降增加，以此来等效降驱动电压，进而减小驱动损耗。
 首页 Email</description>
-    </item>
-    
-    <item>
-      <title>LLC 谐振变换器</title>
-      <link>http://www.WattLab.net/20181030-llc/</link>
-      <pubDate>Tue, 30 Oct 2018 07:21:03 +0800</pubDate>
-      
-      <guid>http://www.WattLab.net/20181030-llc/</guid>
-      <description> 效率特性 ZVS的实现 Voltage Gain active-clamp PWM 软开关 f的负载特性 f的输入特性  </description>
-    </item>
-    
-    <item>
-      <title>软开关</title>
-      <link>http://www.WattLab.net/20181030-%E6%8B%93%E6%89%91/</link>
-      <pubDate>Tue, 30 Oct 2018 07:21:03 +0800</pubDate>
-      
-      <guid>http://www.WattLab.net/20181030-%E6%8B%93%E6%89%91/</guid>
-      <description> 二极管的反向恢复特性 纯电阻负载时的MOSFET开关特性 snabber active-clamp PWM 软开关 ​  </description>
-    </item>
-    
-    <item>
-      <title>磁</title>
-      <link>http://www.WattLab.net/20181030-%E7%A3%81/</link>
-      <pubDate>Tue, 30 Oct 2018 07:21:01 +0800</pubDate>
-      
-      <guid>http://www.WattLab.net/20181030-%E7%A3%81/</guid>
-      <description>自感与互感
-理想变压器
-磁路的定理, 安培环路定理, 法拉第电磁感应定律
-变压器是如何储存能量和传递能量的 漏感与励磁电感 变压器的电压和电流, 之间的因果关系
-集肤效应 临近效应</description>
     </item>
     
   </channel>

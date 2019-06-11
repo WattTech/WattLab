@@ -8,7 +8,7 @@
 
 <meta name="description" content="">
 
-<title>软开关</title>
+<title>20190610_LLC_HighLine_HighFrequency_DriverLoss</title>
 <meta name="generator" content="Hugo 0.30.2" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/pojoaque.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
@@ -96,18 +96,37 @@
 </div>
 <div class="col-md-9 content">
 
-<h1>软开关</h1>
-<h4>Published 10-30-2018 07:21:03</h4>
+<h1>20190610_LLC_HighLine_HighFrequency_DriverLoss</h1>
+<h4>Published 06-11-2019 22:19:14</h4>
 
 <article>
-    <ol>
-<li>二极管的反向恢复特性</li>
-<li>纯电阻负载时的MOSFET开关特性</li>
-<li>snabber</li>
-<li>active-clamp</li>
-<li>PWM 软开关</li>
-<li>​</li>
-</ol>
+    <p>Daily Issue: LLC 驱动电阻过热
+1. 开通过程的Miller Plateau
+2. 关断过程的Miller Plateau。Cgd的等效电容在低压时最
+3. 高频时的类Droop特性是否有作用</p>
+
+<p>&lt;!&ndash;more&ndash;&gt;
+####开通过程的Miller Plateau导致损耗增加
+@300Vac,200Vdc,25A, 刚刚退出Burst点，工作频率最高约300kHz，可以开出Vgs波形有明显的Miller Plateau
+<img src="http://wattlab.net/20190610_LLC_HighLine_HighFrequency_DriverLoss_Pic1.png" width="80%"/><br />
+实测波形如下图<br />
+<img src="http://wattlab.net/20190610_LLC_HighLine_HighFrequency_DriverLoss_Pic2.png" width="80%"/></p>
+
+<p>Miller Plateau导致开通时间明显边长<br />
+<img src="http://wattlab.net/20190610_LLC_HighLine_HighFrequency_DriverLoss_Pic3.png" width="80%"/><br />
+<img src="http://wattlab.net/20190610_LLC_HighLine_HighFrequency_DriverLoss_Pic4.png" width="80%"/></p>
+
+<p>####关断过程的Miller Plateau
+Miller Plateau是由GD间的结电容造成的，而结电容Cgd非线性，从下面两张图可以看出，在Vds从零开始爬上到Vbus过程中：1. 起初的100ns仅爬升6V，而这短时间对应Vgs Miller Plateau的时间；2. 之后的100ns从6V爬升到了410V。<br />
+Cgd的非线性在Vds电压低时较大，对驱动损耗而言，开通时刻Vds应保持为接近0V，而关断是硬关断，这个过程是无法避免的。<br />
+<img src="http://wattlab.net/20190610_LLC_HighLine_HighFrequency_DriverLoss_Pic5.png" width="80%"/><br />
+<img src="http://wattlab.net/20190610_LLC_HighLine_HighFrequency_DriverLoss_Pic6.png" width="80%"/></p>
+
+<p>####高频时的类Droop特性是否有作用</p>
+
+<p>主要思想是，在高频时，由于输入电流较大，在输入Vcc电源上串入小电阻，电流大时电阻上压降增加，以此来等效降驱动电压，进而减小驱动损耗。</p>
+
+<p><a href="http://wattlab.net">首页</a>       <a href="mailto:qi.rujun@qq.com">Email</a></p>
 
 </article>
 
