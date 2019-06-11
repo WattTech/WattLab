@@ -6,26 +6,10 @@
     <description>Recent content in Development on WattLab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 11 Jun 2019 22:19:14 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 30 Oct 2018 07:21:03 +0800</lastBuildDate>
     
 	<atom:link href="http://www.WattLab.net/tags/development/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>20190610_LLC_HighLine_HighFrequency_DriverLoss</title>
-      <link>http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/</link>
-      <pubDate>Tue, 11 Jun 2019 22:19:14 +0800</pubDate>
-      
-      <guid>http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/</guid>
-      <description>Daily Issue: LLC 驱动电阻过热 1. 开通过程的Miller Plateau 2. 关断过程的Miller Plateau。Cgd的等效电容在低压时最 3. 高频时的类Droop特性是否有作用
-&amp;lt;!&amp;ndash;more&amp;ndash;&amp;gt; ####开通过程的Miller Plateau导致损耗增加 @300Vac,200Vdc,25A, 刚刚退出Burst点，工作频率最高约300kHz，可以开出Vgs波形有明显的Miller Plateau 实测波形如下图
-Miller Plateau导致开通时间明显边长
-####关断过程的Miller Plateau Miller Plateau是由GD间的结电容造成的，而结电容Cgd非线性，从下面两张图可以看出，在Vds从零开始爬上到Vbus过程中：1. 起初的100ns仅爬升6V，而这短时间对应Vgs Miller Plateau的时间；2. 之后的100ns从6V爬升到了410V。
-Cgd的非线性在Vds电压低时较大，对驱动损耗而言，开通时刻Vds应保持为接近0V，而关断是硬关断，这个过程是无法避免的。
-####高频时的类Droop特性是否有作用
-主要思想是，在高频时，由于输入电流较大，在输入Vcc电源上串入小电阻，电流大时电阻上压降增加，以此来等效降驱动电压，进而减小驱动损耗。
-首页 Email</description>
-    </item>
     
     <item>
       <title>LLC 谐振变换器</title>
