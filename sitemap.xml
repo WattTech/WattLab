@@ -18,21 +18,6 @@
   </url>
   
   <url>
-    <loc>http://www.WattLab.net/20181030-llc/</loc>
-    <lastmod>2018-10-30T07:21:03+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.WattLab.net/20181030-%E6%8B%93%E6%89%91/</loc>
-    <lastmod>2018-10-30T07:21:03+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.WattLab.net/20181030-%E7%A3%81/</loc>
-    <lastmod>2018-10-30T07:21:01+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.WattLab.net/template/</loc>
     <lastmod>2018-10-28T11:40:57+08:00</lastmod>
   </url>
@@ -44,12 +29,6 @@
   
   <url>
     <loc>http://www.WattLab.net/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.WattLab.net/categories/daily-report/</loc>
-    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -67,19 +46,13 @@
   
   <url>
     <loc>http://www.WattLab.net/tags/llc/</loc>
-    <lastmod>2018-10-30T07:21:03+08:00</lastmod>
+    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.WattLab.net/categories/llc/</loc>
-    <lastmod>2018-10-30T07:21:03+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.WattLab.net/tags/megnetism/</loc>
-    <lastmod>2018-10-30T07:21:01+08:00</lastmod>
+    <loc>http://www.WattLab.net/categories/report/</loc>
+    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -92,12 +65,6 @@
   <url>
     <loc>http://www.WattLab.net/tags/</loc>
     <lastmod>2019-06-11T22:19:14+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.WattLab.net/tags/topology/</loc>
-    <lastmod>2018-10-30T07:21:03+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -122,12 +89,6 @@
   <url>
     <loc>http://www.WattLab.net/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2017-11-05T17:40:55+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.WattLab.net/categories/%E7%A3%81/</loc>
-    <lastmod>2018-10-30T07:21:03+08:00</lastmod>
     <priority>0</priority>
   </url>
   
