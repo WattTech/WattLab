@@ -40,6 +40,22 @@
     </item>
     
     <item>
+      <title>20190610_LLC_HighLine_HighFrequency_DriverLoss</title>
+      <link>http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/</link>
+      <pubDate>Tue, 11 Jun 2019 22:19:14 +0800</pubDate>
+      
+      <guid>http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/</guid>
+      <description>Daily Issue: LLC 驱动电阻过热 1. 开通过程的Miller Plateau 2. 关断过程的Miller Plateau。Cgd的等效电容在低压时最 3. 高频时的类Droop特性是否有作用
+&amp;lt;!&amp;ndash;more&amp;ndash;&amp;gt; ####开通过程的Miller Plateau导致损耗增加 @300Vac,200Vdc,25A, 刚刚退出Burst点，工作频率最高约300kHz，可以开出Vgs波形有明显的Miller Plateau 实测波形如下图
+Miller Plateau导致开通时间明显边长
+####关断过程的Miller Plateau Miller Plateau是由GD间的结电容造成的，而结电容Cgd非线性，从下面两张图可以看出，在Vds从零开始爬上到Vbus过程中：1. 起初的100ns仅爬升6V，而这短时间对应Vgs Miller Plateau的时间；2. 之后的100ns从6V爬升到了410V。
+Cgd的非线性在Vds电压低时较大，对驱动损耗而言，开通时刻Vds应保持为接近0V，而关断是硬关断，这个过程是无法避免的。
+####高频时的类Droop特性是否有作用
+主要思想是，在高频时，由于输入电流较大，在输入Vcc电源上串入小电阻，电流大时电阻上压降增加，以此来等效降驱动电压，进而减小驱动损耗。
+首页 Email</description>
+    </item>
+    
+    <item>
       <title>LLC 谐振变换器</title>
       <link>http://www.WattLab.net/20181030-llc/</link>
       <pubDate>Tue, 30 Oct 2018 07:21:03 +0800</pubDate>
@@ -98,15 +114,6 @@ J_\alpha(x) = \sum_{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left
 
 &lt;p&gt;从此处下载二级制文件安装.&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;https://github.com/gohugoio/hugo/releases&lt;/a&gt;
 &lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/</guid>
-      <description>-�-�-� � �t�i�t�l�e�:� �&amp;ldquo;�2�0�1�9�0�6�1�0�_�L�L�C�_�H�i�g�h�L�i�n�e�_�H�i�g�h�F�r�e�q�u�e�n�c�y�_�D�r�i�v�e�r�L�o�s�s�&amp;ldquo;� � �a�u�t�h�o�r�:� �&amp;ldquo;�R�u�j�&amp;rdquo;� � �d�a�t�e�:� �2�0�1�9�-�0�6�-�1�1�T�2�2�:�1�9�:�1�4�+�0�8�:�0�0� � �D�e�s�c�r�i�p�t�i�o�n�:� �&amp;ldquo;�L�L�C�_�H�i�g�h�L�i�n�e�_�H�i�g�h�F�r�e�q�u�e�n�c�y�_�D�r�i�v�e�r�L�o�s�s�&amp;ldquo;� � �c�a�t�e�g�o�r�i�e�s�:� �[�&amp;ldquo;�D�a�i�l�y� �R�e�p�o�r�t�&amp;rdquo;�]� � �t�a�g�s�:� �[�&amp;ldquo;�D�e�v�e�l�o�p�m�e�n�t�&amp;rdquo;�,� �&amp;ldquo;�S�M�P�S�&amp;rdquo;�]� � �p�r�e�v�:� �/��_�x�vaIN � �d�r�a�f�t�:� �f�a�l�s�e� � �w�e�i�g�h�t�:� �1�0� � �-�-�-� � � � �D�a�i�l�y� �I�s�s�u�e�:� �L�L�C� �q��R5u;�Ǐ�p � �1�.� ��_�Ǐz�vM�i�l�l�e�r� �P�l�a�t�e�a�u� � �2�.� �sQ�eǏz�vM�i�l�l�e�r� �P�l�a�t�e�a�u�0C�g�d��vI{He5u�[(WNO�S�e�g � �3�.� �ؚ���e�v{|D�r�o�o�p�yr&amp;rsquo;/f&amp;amp;T g\O(u � � � �\�&amp;lt;�!�-�-�m�o�r�e�-�-�\�&amp;gt;� � � � � � � �#�#�#�#��_�Ǐz�vM�i�l�l�e�r� �P�l�a�t�e�a�u��[��_c��X�R � �@�3�0�0�V�a�c�,�2�0�0�V�d�c�,�2�5�A�,� �RR���QB�u�r�s�t��p��]\O���s�gؚ�~3�0�0�k�H�z���S�N�_�QV�g�s��lb_ gf&amp;gt;f�vM�i�l�l�e�r� �P�l�a�t�e�a�u� � �&amp;lt;�i�m�g� �s�r�c�=�&amp;quot;�h�t�t�p�:�/�/�w�a�t�t�l�a�b�.</description>
     </item>
     
   </channel>

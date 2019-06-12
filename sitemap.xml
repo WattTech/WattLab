@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/</loc>
+    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.WattLab.net/20181030-llc/</loc>
     <lastmod>2018-10-30T07:21:03+08:00</lastmod>
   </url>
@@ -38,17 +43,19 @@
   </url>
   
   <url>
-    <loc>http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/</loc>
-  </url>
-  
-  <url>
     <loc>http://www.WattLab.net/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>http://www.WattLab.net/categories/daily-report/</loc>
+    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.WattLab.net/tags/development/</loc>
-    <lastmod>2018-10-30T07:21:03+08:00</lastmod>
+    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -78,13 +85,13 @@
   
   <url>
     <loc>http://www.WattLab.net/tags/smps/</loc>
-    <lastmod>2018-10-30T07:21:03+08:00</lastmod>
+    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.WattLab.net/tags/</loc>
-    <lastmod>2018-10-30T07:21:03+08:00</lastmod>
+    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
