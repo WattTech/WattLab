@@ -17,10 +17,13 @@
       <pubDate>Tue, 11 Jun 2019 22:19:14 +0800</pubDate>
       
       <guid>http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/</guid>
-      <description>&lt;p&gt;Daily Issue: LLC 驱动电阻过热
-1. 开通过程的Miller Plateau
-2. 关断过程的Miller Plateau
-3. 高频时的类Droop特性是否有作用&lt;/p&gt;
+      <description>&lt;h3 id=&#34;daily-issue-llc-驱动电阻过热&#34;&gt;Daily Issue: LLC 驱动电阻过热&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;开通过程的Miller Plateau&lt;/li&gt;
+&lt;li&gt;关断过程的Miller Plateau&lt;/li&gt;
+&lt;li&gt;高频时的类Droop特性是否有作用&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

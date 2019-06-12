@@ -31,15 +31,13 @@
         <h3 data-open="last-posts">WattLab - Most recent posts</h3>
         <ul>
             
-            <li><a href="http://www.WattLab.net/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/">写在前面</a></li>
+            <li><a href="http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/">20190610, 驱动电阻过热</a></li>
+            
+            <li><a href="http://www.WattLab.net/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E7%AE%A1%E7%90%86%E8%BF%99%E4%B8%AA%E7%BD%91%E7%AB%99/">如何使用Hugo管理这个网站</a></li>
             
             <li><a href="http://www.WattLab.net/%E5%BF%99%E7%A2%8C%E7%9A%84%E6%84%8F%E4%B9%89/">忙碌的意义</a></li>
             
-            <li><a href="http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/">20190610, 驱动电阻过热</a></li>
-            
-            <li><a href="http://www.WattLab.net/template/">Template</a></li>
-            
-            <li><a href="http://www.WattLab.net/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E7%AE%A1%E7%90%86%E8%BF%99%E4%B8%AA%E7%BD%91%E7%AB%99/">如何使用Hugo管理这个网站</a></li>
+            <li><a href="http://www.WattLab.net/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/">写在前面</a></li>
             
         </ul>
     </div>
@@ -49,15 +47,11 @@
         <h3 data-open="tags">Tags</h3>
         <ul class="tags">
             
-            <li><a href="/tags/development">development</a></li>
-            
             <li><a href="/tags/hugo">hugo</a></li>
             
             <li><a href="/tags/llc">llc</a></li>
             
             <li><a href="/tags/smps">smps</a></li>
-            
-            <li><a href="/tags/%E6%9D%82%E6%96%87">杂文</a></li>
             
         </ul>
     </div>
@@ -68,11 +62,11 @@
         <h3 data-open="categories">Categories</h3>
         <ul class="categories">
             
-            <li><a href="/categories/report">report</a></li>
+            <li><a href="/categories/%E6%95%99%E7%A8%8B">教程</a></li>
             
-            <li><a href="/categories/tutorials">tutorials</a></li>
+            <li><a href="/categories/%E6%97%A5%E5%BF%97">日志</a></li>
             
-            <li><a href="/categories/%E7%94%9F%E6%B4%BB">生活</a></li>
+            <li><a href="/categories/%E6%9D%82%E6%96%87">杂文</a></li>
             
         </ul>
     </div>
@@ -86,25 +80,30 @@
 <h4>Published 06-11-2019 22:19:14</h4>
 
 <article>
-    <p>Daily Issue: LLC 驱动电阻过热
-1. 开通过程的Miller Plateau
-2. 关断过程的Miller Plateau
-3. 高频时的类Droop特性是否有作用</p>
+    <h3 id="daily-issue-llc-驱动电阻过热">Daily Issue: LLC 驱动电阻过热</h3>
+
+<ol>
+<li>开通过程的Miller Plateau</li>
+<li>关断过程的Miller Plateau</li>
+<li>高频时的类Droop特性是否有作用</li>
+</ol>
 
 <p></p>
 
-<h4 id="开通过程的miller-plateau导致损耗增加">开通过程的Miller Plateau导致损耗增加</h4>
+<h3 id="开通过程的miller-plateau导致损耗增加">开通过程的Miller Plateau导致损耗增加</h3>
 
 <p>@300Vac,200Vdc,25A, 刚刚退出Burst点，工作频率最高约300kHz，可以开出Vgs波形有明显的Miller Plateau<br />
 <img src="http://wattlab.net/20190610_LLC_HighLine_HighFrequency_DriverLoss_Pic1.png" width="80%"/><br />
+​<br />
 实测波形如下图<br />
 <img src="http://wattlab.net/20190610_LLC_HighLine_HighFrequency_DriverLoss_Pic2.png" width="80%"/></p>
 
 <p>Miller Plateau导致开通时间明显边长<br />
 <img src="http://wattlab.net/20190610_LLC_HighLine_HighFrequency_DriverLoss_Pic3.png" width="80%"/><br />
+​<br />
 <img src="http://wattlab.net/20190610_LLC_HighLine_HighFrequency_DriverLoss_Pic4.png" width="80%"/></p>
 
-<h4 id="关断过程的miller-plateau">关断过程的Miller Plateau</h4>
+<h3 id="关断过程的miller-plateau">关断过程的Miller Plateau</h3>
 
 <p>Miller Plateau是由GD间的结电容造成的，而结电容Cgd非线性，从下面两张图可以看出，在Vds从零开始爬上到Vbus过程中。Cgd的非线性在Vds电压低时较大，对驱动损耗而言，开通时刻Vds应保持为接近0V，而关断是硬关断，这个过程是无法避免的。</p>
 
@@ -116,7 +115,7 @@
 <img src="http://wattlab.net/20190610_LLC_HighLine_HighFrequency_DriverLoss_Pic6.png" width="80%"/></p></li>
 </ol>
 
-<h4 id="高频时的类droop特性是否有作用">高频时的类Droop特性是否有作用</h4>
+<h3 id="高频时的类droop特性是否有作用">高频时的类Droop特性是否有作用</h3>
 
 <p>主要思想是，在高频时，由于输入电流较大，在输入Vcc电源上串入小电阻，电流大时电阻上压降增加，以此来等效降驱动电压，进而减小驱动损耗。</p>
 

@@ -1,44 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>WattLab</title>
-    <link>http://www.WattLab.net/</link>
-    <description>Recent content on WattLab</description>
+    <title>杂文 on WattLab</title>
+    <link>http://www.WattLab.net/categories/%E6%9D%82%E6%96%87/</link>
+    <description>Recent content in 杂文 on WattLab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 11 Jun 2019 22:19:14 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 15 Mar 2016 09:10:44 +0800</lastBuildDate>
     
-	<atom:link href="http://www.WattLab.net/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.WattLab.net/categories/%E6%9D%82%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>20190610, 驱动电阻过热</title>
-      <link>http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/</link>
-      <pubDate>Tue, 11 Jun 2019 22:19:14 +0800</pubDate>
-      
-      <guid>http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/</guid>
-      <description>&lt;h3 id=&#34;daily-issue-llc-驱动电阻过热&#34;&gt;Daily Issue: LLC 驱动电阻过热&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;开通过程的Miller Plateau&lt;/li&gt;
-&lt;li&gt;关断过程的Miller Plateau&lt;/li&gt;
-&lt;li&gt;高频时的类Droop特性是否有作用&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>如何使用Hugo管理这个网站</title>
-      <link>http://www.WattLab.net/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E7%AE%A1%E7%90%86%E8%BF%99%E4%B8%AA%E7%BD%91%E7%AB%99/</link>
-      <pubDate>Sun, 28 Oct 2018 10:38:47 +0800</pubDate>
-      
-      <guid>http://www.WattLab.net/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E7%AE%A1%E7%90%86%E8%BF%99%E4%B8%AA%E7%BD%91%E7%AB%99/</guid>
-      <description>&lt;h3 id=&#34;安装hugo&#34;&gt;安装Hugo&lt;/h3&gt;
-
-&lt;p&gt;从此处下载二级制文件安装.&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;https://github.com/gohugoio/hugo/releases&lt;/a&gt;
-&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>忙碌的意义</title>

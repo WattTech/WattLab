@@ -3,23 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.WattLab.net/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/</loc>
-    <lastmod>2017-11-05T17:40:55+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.WattLab.net/%E5%BF%99%E7%A2%8C%E7%9A%84%E6%84%8F%E4%B9%89/</loc>
-    <lastmod>2016-03-15T09:10:44+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/</loc>
     <lastmod>2019-06-11T22:19:14+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.WattLab.net/template/</loc>
-    <lastmod>2018-10-28T11:40:57+08:00</lastmod>
   </url>
   
   <url>
@@ -28,30 +13,28 @@
   </url>
   
   <url>
+    <loc>http://www.WattLab.net/%E5%BF%99%E7%A2%8C%E7%9A%84%E6%84%8F%E4%B9%89/</loc>
+    <lastmod>2016-03-15T09:10:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.WattLab.net/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/</loc>
+    <lastmod>2017-11-05T17:40:55+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.WattLab.net/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.WattLab.net/tags/development/</loc>
-    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://www.WattLab.net/tags/hugo/</loc>
-    <lastmod>2018-10-28T11:40:57+08:00</lastmod>
+    <lastmod>2018-10-28T10:38:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.WattLab.net/tags/llc/</loc>
-    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.WattLab.net/categories/report/</loc>
     <lastmod>2019-06-11T22:19:14+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -64,31 +47,31 @@
   
   <url>
     <loc>http://www.WattLab.net/tags/</loc>
-    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.WattLab.net/categories/tutorials/</loc>
-    <lastmod>2018-10-28T11:40:57+08:00</lastmod>
+    <lastmod>2018-10-28T10:38:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.WattLab.net/</loc>
-    <lastmod>2017-11-05T17:40:55+08:00</lastmod>
+    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.WattLab.net/tags/%E6%9D%82%E6%96%87/</loc>
-    <lastmod>2017-11-05T17:40:55+08:00</lastmod>
+    <loc>http://www.WattLab.net/categories/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2018-10-28T10:38:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.WattLab.net/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2017-11-05T17:40:55+08:00</lastmod>
+    <loc>http://www.WattLab.net/categories/%E6%97%A5%E5%BF%97/</loc>
+    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.WattLab.net/categories/%E6%9D%82%E6%96%87/</loc>
+    <lastmod>2016-03-15T09:10:44+08:00</lastmod>
     <priority>0</priority>
   </url>
   
