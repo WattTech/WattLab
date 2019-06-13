@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.WattLab.net/daily_report_20190611_over_current_protection/</loc>
+    <lastmod>2019-06-12T23:29:53+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/</loc>
     <lastmod>2019-06-11T22:19:14+08:00</lastmod>
   </url>
@@ -35,13 +40,13 @@
   
   <url>
     <loc>http://www.WattLab.net/tags/llc/</loc>
-    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
+    <lastmod>2019-06-12T23:29:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.WattLab.net/tags/smps/</loc>
-    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
+    <lastmod>2019-06-12T23:29:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -53,7 +58,7 @@
   
   <url>
     <loc>http://www.WattLab.net/</loc>
-    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
+    <lastmod>2019-06-12T23:29:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -65,7 +70,7 @@
   
   <url>
     <loc>http://www.WattLab.net/categories/%E6%97%A5%E5%BF%97/</loc>
-    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
+    <lastmod>2019-06-12T23:29:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   
