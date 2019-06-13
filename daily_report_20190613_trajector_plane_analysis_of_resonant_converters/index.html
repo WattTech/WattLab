@@ -8,7 +8,7 @@
 
 <meta name="description" content="">
 
-<title>20190612, LLC线路的OCP保护</title>
+<title>20190613, State-Plane Analysis of Resonant Converters</title>
 <meta name="generator" content="Hugo 0.30.2" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/pojoaque.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
@@ -80,18 +80,11 @@
 </div>
 <div class="col-md-9 content">
 
-<h1>20190612, LLC线路的OCP保护</h1>
-<h4>Published 06-12-2019 23:29:53</h4>
+<h1>20190613, State-Plane Analysis of Resonant Converters</h1>
+<h4>Published 06-13-2019 22:19:54</h4>
 
 <article>
-    <h3 id="daily-issue-llc的ocp设置">Daily Issue: LLC的OCP设置</h3>
-
-<ol>
-<li>为什么要进行OCP保护</li>
-<li>LLC有哪些保护方式</li>
-<li>LLC保护点的设置</li>
-<li>存在哪些问题</li>
-</ol>
+    <p>最近遇到LLC OCP设置问题，查到李泽元先生的一篇文章，Digital Implementation of Soft Start-Up and Short-Circuit Protection for High-Frequency LLC Converters With Optimal Trajectory Control<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>, 看不太懂其中的Optimal Trajectory Control, 因此摸到了Weiyi Feng的博士论文State-Trajectory Analysis and Control of LLC Resonant Converters<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup>，但这篇文章也没有Trajectory Control的详细说明，从参考文献中找到下面三篇文章<sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup><sup class="footnote-ref" id="fnref:4"><a rel="footnote" href="#fn:4">4</a></sup><sup class="footnote-ref" id="fnref:5"><a rel="footnote" href="#fn:5">5</a></sup><sup class="footnote-ref" id="fnref:6"><a rel="footnote" href="#fn:6">6</a></sup>，可以仔细看看。</p>
 
 <p></p>
 
@@ -115,20 +108,6 @@
 
 <p>从实际见到的保护来看，目前使用的主要是第一种。上面的第三种是说将Cr电容分开，并且加二极管进行钳位，这在半桥中已经都在使用，并且一般会加额外的过流保护。
 Wang Bo的论文里对这三种方式的优缺点进行了总结。</p>
-
-<ol>
-<li>For the first method, The benefit of this method is <strong>easy to implement. It doesn’t need complex control circuit</strong>. the converter will be working at pretty high switching frequency compare with normal operation condition. With high switching frequency, there are several considerations:
-
-<ol>
-<li><strong>The switching loss will increase</strong>. During short circuit condition, current stress reaches the highest. Turn off current also reaches the highest. With so high switching frequency, the loss on the device will be very high which will increase the thermal management requirement.</li>
-<li><strong>The stress on the magnetic components will be very unbalanced</strong>. During over current protection, switching frequency reaches highest level while all the volt-second is applied to the inductor, which means inductor has to be designed according to this highest. For LLC resonant converter, this frequency will be almost double of normal operation frequency; this will make the size of the inductor to be larger.</li>
-</ol></li>
-<li>The second method can achieve the current limiting function. The concern is operating condition. <strong>Since ZVS is lost during over current protection mode, the switching loss will increase and noise on gate driver will be a problem too</strong>. Another issue will be how fast the transition between different modes could be. Since the current could ramp up very fast, a very fast protection is necessary.</li>
-<li>Basically this is a passive method to limit the current. With splitting cap, input current ripple can be reduced greatly. With clamping diodes, the current at over current condition can be automatically limited. The voltage stress on the resonant cap is also kept under a given voltage. ZVS is achieved during over current protection mode. <strong>The problem of this method is that the setting point is a function of input, output voltage</strong>. So for different operating point, this setting value will change. It reaches minimal at low line and high output voltage and reaches maximum with high line and low output voltage.</li>
-</ol>
-
-<p>第三种保护方式主要是钳位Cr电压，来谐振原边电流。Wang Bo的方式是将Cr钳位到输入电压上，在高压输入，会导致原边电流仍然很大。
-有文论沿用这个思路，通过额外的变压器将Cr上的电压进行钳位<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup>-<sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup>。</p>
 
 <h3 id="llc保护点的设置">LLC保护点的设置</h3>
 
@@ -158,12 +137,18 @@ Wang Bo的论文里对这三种方式的优缺点进行了总结。</p>
 <hr />
 
 <ol>
-<li id="fn:1">Yang, B &amp; Lee, F.C.Y. &amp; Concannon, M. (2003). Over current protection methods for LLC resonant converter. 605 - 609 vol.2. 10.1109/APEC.2003.1179276. 
+<li id="fn:1">Fei, Chao &amp; Lee, F.C.Y. &amp; Li, Qiang. (2015). Soft start-up for high frequency LLC resonant converter with optimal trajectory control. Conference Proceedings - IEEE Applied Power Electronics Conference and Exposition - APEC. 2015. 609-615. 10.1109/APEC.2015.7104412. 
  <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
-<li id="fn:2">Xie, Xiaogao &amp; Zhang, Junming &amp; Zhao, Chen &amp; Zhao, Zhuo &amp; Qian, Zhaoming. (2007). Analysis and Optimization of LLC Resonant Converter With a Novel Over-Current Protection Circuit. Power Electronics, IEEE Transactions on. 22. 435 - 443. 10.1109/TPEL.2006.889919. 
+<li id="fn:2">Weiyi, Feng.State-Trajectory Analysis and Control of LLC Resonant Converters[D].Virginia Tech CPES，2013-04-19 <a href="https://vtechworks.lib.vt.edu/handle/10919/19327">https://vtechworks.lib.vt.edu/handle/10919/19327</a>
  <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
-<li id="fn:3">Ling, Yuesheng &amp; Guo, Zongshu &amp; Liu, X. (2016). The Soft-Start Analysis of a Full-Bridge LLC Converter with Hybrid Control Strategy. 1-4. 10.1109/VPPC.2016.7791801. 
+<li id="fn:3">Oruganti, Ramesh &amp; Lee, F.C.Y.. (1985). Resonant Power Processors, Part I&mdash;State Plane Analysis. Industry Applications, IEEE Transactions on. 21. 1453 - 1460. 10.1109/TIA.1985.349602. 
  <a class="footnote-return" href="#fnref:3"><sup>[return]</sup></a></li>
+<li id="fn:4">Oruganti, Ramesh &amp; Lee, F.C.Y.. (1985). Resonant Power Processors, Part II-Methods of Control. Industry Applications, IEEE Transactions on. IA-21. 1461 - 1471. 10.1109/TIA.1985.349603. 
+ <a class="footnote-return" href="#fnref:4"><sup>[return]</sup></a></li>
+<li id="fn:5">Oruganti, Ramesh.State-Plane Analysis of Resonant Converters[D].Virginia Tech CPES，1987 <a href="https://vtechworks.lib.vt.edu/handle/10919/54755">https://vtechworks.lib.vt.edu/handle/10919/54755</a>
+ <a class="footnote-return" href="#fnref:5"><sup>[return]</sup></a></li>
+<li id="fn:6">Oruganti, Ramesh &amp; J. Yang, James &amp; Lee, F.C.Y.. (1988). Implementation Of Optimal Trajectory Control Of Series Resonant Converter. Power Electronics, IEEE Transactions on. 3. 318 - 327. 10.<sup>1109</sup>&frasl;<sub>63</sub>.17950.
+ <a class="footnote-return" href="#fnref:6"><sup>[return]</sup></a></li>
 </ol>
 </div>
 </article>

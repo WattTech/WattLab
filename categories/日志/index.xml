@@ -6,27 +6,35 @@
     <description>Recent content in 日志 on WattLab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 12 Jun 2019 23:29:53 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 13 Jun 2019 22:19:54 +0800</lastBuildDate>
     
 	<atom:link href="http://www.WattLab.net/categories/%E6%97%A5%E5%BF%97/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>20190612, 驱动电阻过热</title>
+      <title>20190613, State-Plane Analysis of Resonant Converters</title>
+      <link>http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis_of_resonant_converters/</link>
+      <pubDate>Thu, 13 Jun 2019 22:19:54 +0800</pubDate>
+      
+      <guid>http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis_of_resonant_converters/</guid>
+      <description>&lt;p&gt;最近遇到LLC OCP设置问题，查到李泽元先生的一篇文章，Digital Implementation of Soft Start-Up and Short-Circuit Protection for High-Frequency LLC Converters With Optimal Trajectory Control&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, 看不太懂其中的Optimal Trajectory Control, 因此摸到了Weiyi Feng的博士论文State-Trajectory Analysis and Control of LLC Resonant Converters&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;，但这篇文章也没有Trajectory Control的详细说明，从参考文献中找到下面三篇文章&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:4&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:5&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:5&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:6&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:6&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;，可以仔细看看。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>20190612, LLC线路的OCP保护</title>
       <link>http://www.WattLab.net/daily_report_20190611_over_current_protection/</link>
       <pubDate>Wed, 12 Jun 2019 23:29:53 +0800</pubDate>
       
       <guid>http://www.WattLab.net/daily_report_20190611_over_current_protection/</guid>
-      <description>&lt;p&gt;&amp;rdquo;&amp;rsquo;
-&lt;a href=&#34;http://wattlab.net&#34;&gt;首页&lt;/a&gt;        &lt;a href=&#34;mailto:qi.rujun@qq.com&#34;&gt;Email:qi.rujun@qq.com&lt;/a&gt;
-&amp;ldquo;&amp;rsquo;&lt;/p&gt;
-
-&lt;h3 id=&#34;daily-issue-pfc和llc的ocp设置&#34;&gt;Daily Issue: PFC和LLC的OCP设置&lt;/h3&gt;
+      <description>&lt;h3 id=&#34;daily-issue-llc的ocp设置&#34;&gt;Daily Issue: LLC的OCP设置&lt;/h3&gt;
 
 &lt;ol&gt;
-&lt;li&gt;为什么要进行OCP保护，存在哪些问题&lt;/li&gt;
-&lt;li&gt;PWM型拓扑的保护点设置&lt;/li&gt;
-&lt;li&gt;谐振型拓扑的保护点设置&lt;/li&gt;
+&lt;li&gt;为什么要进行OCP保护&lt;/li&gt;
+&lt;li&gt;LLC有哪些保护方式&lt;/li&gt;
+&lt;li&gt;LLC保护点的设置&lt;/li&gt;
+&lt;li&gt;存在哪些问题&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
