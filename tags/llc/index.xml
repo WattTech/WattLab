@@ -13,10 +13,10 @@
     
     <item>
       <title>20190613, State-Plane Analysis</title>
-      <link>http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis_of_resonant_converters/</link>
+      <link>http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis/</link>
       <pubDate>Thu, 13 Jun 2019 22:19:54 +0800</pubDate>
       
-      <guid>http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis_of_resonant_converters/</guid>
+      <guid>http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis/</guid>
       <description>&lt;script type=&#34;text/javascript&#34; src=&#34;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default&#34;&gt;&lt;/script&gt;
 
 &lt;p&gt;$$J&lt;em&gt;\alpha(x) = \sum&lt;/em&gt;{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha}$$&lt;/p&gt;
