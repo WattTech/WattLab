@@ -8,7 +8,7 @@
 
 <meta name="description" content="">
 
-<title>20190613, State-Plane Analysis of Resonant Converters</title>
+<title>20190613, State-Plane Analysis</title>
 <meta name="generator" content="Hugo 0.30.2" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/pojoaque.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
@@ -31,7 +31,7 @@
         <h3 data-open="last-posts">WattLab - Most recent posts</h3>
         <ul>
             
-            <li><a href="http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis_of_resonant_converters/">20190613, State-Plane Analysis of Resonant Converters</a></li>
+            <li><a href="http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis_of_resonant_converters/">20190613, State-Plane Analysis</a></li>
             
             <li><a href="http://www.WattLab.net/daily_report_20190611_over_current_protection/">20190612, LLC线路的OCP保护</a></li>
             
@@ -80,11 +80,15 @@
 </div>
 <div class="col-md-9 content">
 
-<h1>20190613, State-Plane Analysis of Resonant Converters</h1>
+<h1>20190613, State-Plane Analysis</h1>
 <h4>Published 06-13-2019 22:19:54</h4>
 
 <article>
-    <p>最近遇到LLC OCP设置问题，查到李泽元先生的一篇文章，Digital Implementation of Soft Start-Up and Short-Circuit Protection for High-Frequency LLC Converters With Optimal Trajectory Control<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>, 看不太懂其中的Optimal Trajectory Control, 因此摸到了Weiyi Feng的博士论文State-Trajectory Analysis and Control of LLC Resonant Converters<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup>，但这篇文章也没有Trajectory Control的详细说明，从参考文献中找到下面三篇文章<sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup><sup class="footnote-ref" id="fnref:4"><a rel="footnote" href="#fn:4">4</a></sup><sup class="footnote-ref" id="fnref:5"><a rel="footnote" href="#fn:5">5</a></sup><sup class="footnote-ref" id="fnref:6"><a rel="footnote" href="#fn:6">6</a></sup>，可以仔细看看。</p>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+<p>$$J<em>\alpha(x) = \sum</em>{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha}$$</p>
+
+<p>最近遇到LLC OCP设置问题，查到李泽元先生的一篇文章，Digital Implementation of Soft Start-Up and Short-Circuit Protection for High-Frequency LLC Converters With Optimal Trajectory Control<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>, 看不太懂其中的Optimal Trajectory Control, 因此摸到了Weiyi Feng的博士论文State-Trajectory Analysis and Control of LLC Resonant Converters<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup>，但这篇文章也没有Trajectory Control的详细说明，从参考文献中找到下面三篇文章<sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup><sup class="footnote-ref" id="fnref:4"><a rel="footnote" href="#fn:4">4</a></sup><sup class="footnote-ref" id="fnref:5"><a rel="footnote" href="#fn:5">5</a></sup><sup class="footnote-ref" id="fnref:6"><a rel="footnote" href="#fn:6">6</a></sup>，可以仔细看看。</p>
 
 <p></p>
 
@@ -147,7 +151,7 @@ Wang Bo的论文里对这三种方式的优缺点进行了总结。</p>
  <a class="footnote-return" href="#fnref:4"><sup>[return]</sup></a></li>
 <li id="fn:5">Oruganti, Ramesh.State-Plane Analysis of Resonant Converters[D].Virginia Tech CPES，1987 <a href="https://vtechworks.lib.vt.edu/handle/10919/54755">https://vtechworks.lib.vt.edu/handle/10919/54755</a>
  <a class="footnote-return" href="#fnref:5"><sup>[return]</sup></a></li>
-<li id="fn:6">Oruganti, Ramesh &amp; J. Yang, James &amp; Lee, F.C.Y.. (1988). Implementation Of Optimal Trajectory Control Of Series Resonant Converter. Power Electronics, IEEE Transactions on. 3. 318 - 327. 10.<sup>1109</sup>&frasl;<sub>63</sub>.17950.
+<li id="fn:6">Oruganti, Ramesh &amp; J. Yang, James &amp; Lee, F.C.Y.. (1988). Implementation Of Optimal Trajectory Control Of Series Resonant Converter. Power Electronics, IEEE Transactions on. 3. 318 - 327. 10.1109 / 63.17950.
  <a class="footnote-return" href="#fnref:6"><sup>[return]</sup></a></li>
 </ol>
 </div>

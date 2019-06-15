@@ -12,12 +12,16 @@
     
     
     <item>
-      <title>20190613, State-Plane Analysis of Resonant Converters</title>
+      <title>20190613, State-Plane Analysis</title>
       <link>http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis_of_resonant_converters/</link>
       <pubDate>Thu, 13 Jun 2019 22:19:54 +0800</pubDate>
       
       <guid>http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis_of_resonant_converters/</guid>
-      <description>&lt;p&gt;最近遇到LLC OCP设置问题，查到李泽元先生的一篇文章，Digital Implementation of Soft Start-Up and Short-Circuit Protection for High-Frequency LLC Converters With Optimal Trajectory Control&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, 看不太懂其中的Optimal Trajectory Control, 因此摸到了Weiyi Feng的博士论文State-Trajectory Analysis and Control of LLC Resonant Converters&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;，但这篇文章也没有Trajectory Control的详细说明，从参考文献中找到下面三篇文章&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:4&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:5&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:5&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:6&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:6&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;，可以仔细看看。&lt;/p&gt;
+      <description>&lt;script type=&#34;text/javascript&#34; src=&#34;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;$$J&lt;em&gt;\alpha(x) = \sum&lt;/em&gt;{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha}$$&lt;/p&gt;
+
+&lt;p&gt;最近遇到LLC OCP设置问题，查到李泽元先生的一篇文章，Digital Implementation of Soft Start-Up and Short-Circuit Protection for High-Frequency LLC Converters With Optimal Trajectory Control&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, 看不太懂其中的Optimal Trajectory Control, 因此摸到了Weiyi Feng的博士论文State-Trajectory Analysis and Control of LLC Resonant Converters&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;，但这篇文章也没有Trajectory Control的详细说明，从参考文献中找到下面三篇文章&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:4&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:5&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:5&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:6&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:6&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;，可以仔细看看。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
