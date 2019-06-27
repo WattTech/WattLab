@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Circuit Analysis on WattLab</title>
+    <link>http://www.WattLab.net/tags/circuit-analysis/</link>
+    <description>Recent content in Circuit Analysis on WattLab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 18 Jun 2019 22:49:13 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.WattLab.net/tags/circuit-analysis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>20190618, 线路的Prorogation Delay</title>
+      <link>http://www.WattLab.net/daily_report_20190618_%E7%BA%BF%E8%B7%AF%E7%9A%84prorogation-delay/</link>
+      <pubDate>Tue, 18 Jun 2019 22:49:13 +0800</pubDate>
+      
+      <guid>http://www.WattLab.net/daily_report_20190618_%E7%BA%BF%E8%B7%AF%E7%9A%84prorogation-delay/</guid>
+      <description>&lt;p&gt;在进行电路的设计时，往往需要匹配各个信号的先后逻辑问题，因此需要计算电路中的传输时延。&lt;/p&gt;
+
+&lt;p&gt;目前能想到的主要是
+1. 暂态电路分析
+2. 传递函数中的相位角分析&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>20190621, LLC的最低工作频率</title>
+      <link>http://www.WattLab.net/daily_report_20190621_llc-%E7%BA%BF%E8%B7%AF%E7%9A%84%E6%9C%80%E4%BD%8E%E5%B7%A5%E4%BD%9C%E9%A2%91%E7%8E%87/</link>
+      <pubDate>Fri, 21 Jun 2019 22:09:13 +0800</pubDate>
+      
+      <guid>http://www.WattLab.net/daily_report_20190621_llc-%E7%BA%BF%E8%B7%AF%E7%9A%84%E6%9C%80%E4%BD%8E%E5%B7%A5%E4%BD%9C%E9%A2%91%E7%8E%87/</guid>
+      <description>&lt;p&gt;LLC设计过程中，需要设计机器的频率范围。&lt;/p&gt;
+
+&lt;p&gt;最低频率在的确定有以下几个方面的考虑&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;增益的单调性&lt;/li&gt;
+&lt;li&gt;变压器的体积&lt;/li&gt;
+&lt;li&gt;机器的容性区
+
+&lt;ol&gt;
+&lt;li&gt;启动&lt;/li&gt;
+&lt;li&gt;切载&lt;/li&gt;
+&lt;li&gt;短路&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>20190626, 电流峰值控制的斜坡补偿</title>
+      <link>http://www.WattLab.net/daily_report_20190626_%E7%94%B5%E6%B5%81%E5%B3%B0%E5%80%BC%E6%8E%A7%E5%88%B6%E7%9A%84%E6%96%9C%E5%9D%A1%E8%A1%A5%E5%81%BF/</link>
+      <pubDate>Wed, 26 Jun 2019 22:49:13 +0800</pubDate>
+      
+      <guid>http://www.WattLab.net/daily_report_20190626_%E7%94%B5%E6%B5%81%E5%B3%B0%E5%80%BC%E6%8E%A7%E5%88%B6%E7%9A%84%E6%96%9C%E5%9D%A1%E8%A1%A5%E5%81%BF/</guid>
+      <description>&lt;p&gt;在电流峰值控制(Peak Current Control)中，如果占空比大于50%，会产生次谐波震荡，目前的常用做法是对电流采样信号加入斜坡补偿(Slope Compensation)。&lt;/p&gt;
+
+&lt;h4 id=&#34;次谐波震荡&#34;&gt;次谐波震荡&lt;/h4&gt;
+
+&lt;h4 id=&#34;斜坡补偿&#34;&gt;斜坡补偿&lt;/h4&gt;
+
+&lt;p&gt;理论分析，电路设计&lt;/p&gt;
+
+&lt;p&gt;补偿的斜率问题，补偿的饱和问题。
+补偿中的抖动问题。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>20190627, RC振荡器中的同步问题</title>
+      <link>http://www.WattLab.net/daily_report_20190627_rc%E6%8C%AF%E8%8D%A1%E5%99%A8%E4%B8%AD%E7%9A%84%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Thu, 27 Jun 2019 22:29:13 +0800</pubDate>
+      
+      <guid>http://www.WattLab.net/daily_report_20190627_rc%E6%8C%AF%E8%8D%A1%E5%99%A8%E4%B8%AD%E7%9A%84%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/</guid>
+      <description>&lt;p&gt;在多台机器进行interleaving时，需要匹配各个拓扑的时序问题，需要对振荡器进行同步&lt;/p&gt;
+
+&lt;p&gt;同步过程和RC信号的幅值&lt;/p&gt;
+
+&lt;h4 id=&#34;斜坡补偿&#34;&gt;斜坡补偿&lt;/h4&gt;
+
+&lt;p&gt;理论分析，电路设计&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

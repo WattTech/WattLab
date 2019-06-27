@@ -31,17 +31,25 @@
         <h3 data-open="last-posts">WattLab - Most recent posts</h3>
         <ul>
             
-            <li><a href="http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis/">20190613, State-Plane Analysis</a></li>
-            
-            <li><a href="http://www.WattLab.net/daily_report_20190611_over_current_protection/">20190612, LLC线路的OCP保护</a></li>
-            
-            <li><a href="http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/">20190610, 驱动电阻过热</a></li>
+            <li><a href="http://www.WattLab.net/%E5%BF%99%E7%A2%8C%E7%9A%84%E6%84%8F%E4%B9%89/">忙碌的意义</a></li>
             
             <li><a href="http://www.WattLab.net/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E7%AE%A1%E7%90%86%E8%BF%99%E4%B8%AA%E7%BD%91%E7%AB%99/">如何使用Hugo管理这个网站</a></li>
             
-            <li><a href="http://www.WattLab.net/%E5%BF%99%E7%A2%8C%E7%9A%84%E6%84%8F%E4%B9%89/">忙碌的意义</a></li>
+            <li><a href="http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/">20190610, 驱动电阻过热</a></li>
             
-            <li><a href="http://www.WattLab.net/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/">写在前面</a></li>
+            <li><a href="http://www.WattLab.net/daily_report_20190611_over_current_protection/">20190612, LLC线路的OCP保护</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis/">20190613, State-Plane Analysis</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190614_%E9%80%89%E6%8B%A9%E6%80%A7ovp/">20190614, 选择性OVP</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190618_%E7%BA%BF%E8%B7%AF%E7%9A%84prorogation-delay/">20190618, 线路的Prorogation Delay</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190621_llc-%E7%BA%BF%E8%B7%AF%E7%9A%84%E6%9C%80%E4%BD%8E%E5%B7%A5%E4%BD%9C%E9%A2%91%E7%8E%87/">20190621, LLC的最低工作频率</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190626_%E7%94%B5%E6%B5%81%E5%B3%B0%E5%80%BC%E6%8E%A7%E5%88%B6%E7%9A%84%E6%96%9C%E5%9D%A1%E8%A1%A5%E5%81%BF/">20190626, 电流峰值控制的斜坡补偿</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190627_rc%E6%8C%AF%E8%8D%A1%E5%99%A8%E4%B8%AD%E7%9A%84%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/">20190627, RC振荡器中的同步问题</a></li>
             
         </ul>
     </div>
@@ -51,9 +59,21 @@
         <h3 data-open="tags">Tags</h3>
         <ul class="tags">
             
+            <li><a href="/tags/buck">buck</a></li>
+            
+            <li><a href="/tags/circuit-analysis">circuit-analysis</a></li>
+            
             <li><a href="/tags/hugo">hugo</a></li>
             
             <li><a href="/tags/llc">llc</a></li>
+            
+            <li><a href="/tags/peak-current-control">peak-current-control</a></li>
+            
+            <li><a href="/tags/protection">protection</a></li>
+            
+            <li><a href="/tags/rc-oscillator">rc-oscillator</a></li>
+            
+            <li><a href="/tags/slope-compensation">slope-compensation</a></li>
             
             <li><a href="/tags/smps">smps</a></li>
             
@@ -112,11 +132,84 @@
     
     <article>
         <h3><a href="http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis/">20190613, State-Plane Analysis</a> - 2019-06-13 22:19:54</h3>
-        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+        <p>最近遇到LLC OCP设置问题，查到李泽元先生的一篇文章，Digital Implementation of Soft Start-Up and Short-Circuit Protection for High-Frequency LLC Converters With Optimal Trajectory Control<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>, 看不太懂其中的Optimal Trajectory Control, 因此摸到了Weiyi Feng的博士论文State-Trajectory Analysis and Control of LLC Resonant Converters<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup>，但这篇文章也没有Trajectory Control的详细说明，从参考文献中找到下面三篇文章<sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup><sup class="footnote-ref" id="fnref:4"><a rel="footnote" href="#fn:4">4</a></sup><sup class="footnote-ref" id="fnref:5"><a rel="footnote" href="#fn:5">5</a></sup><sup class="footnote-ref" id="fnref:6"><a rel="footnote" href="#fn:6">6</a></sup>，可以仔细看看。</p>
 
-<p>$$J<em>\alpha(x) = \sum</em>{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha}$$</p>
+<p></p>
+    </article>
+    
+    <article>
+        <h3><a href="http://www.WattLab.net/daily_report_20190614_%E9%80%89%E6%8B%A9%E6%80%A7ovp/">20190614, 选择性OVP</a> - 2019-06-14 22:49:13</h3>
+        <h4 id="输出的ovp">输出的OVP</h4>
 
-<p>最近遇到LLC OCP设置问题，查到李泽元先生的一篇文章，Digital Implementation of Soft Start-Up and Short-Circuit Protection for High-Frequency LLC Converters With Optimal Trajectory Control<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>, 看不太懂其中的Optimal Trajectory Control, 因此摸到了Weiyi Feng的博士论文State-Trajectory Analysis and Control of LLC Resonant Converters<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup>，但这篇文章也没有Trajectory Control的详细说明，从参考文献中找到下面三篇文章<sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup><sup class="footnote-ref" id="fnref:4"><a rel="footnote" href="#fn:4">4</a></sup><sup class="footnote-ref" id="fnref:5"><a rel="footnote" href="#fn:5">5</a></sup><sup class="footnote-ref" id="fnref:6"><a rel="footnote" href="#fn:6">6</a></sup>，可以仔细看看。</p>
+<p>输出的OVP主要是保证， 在机器故障输出高压时，能可靠切断故障机器，防止后级电路烧坏或保护。</p>
+
+<p>OVP的保护要实现：</p>
+
+<ol>
+<li>速度够快，将输出BUS上的电压限定到安全范围内；</li>
+<li>应具有选择性，只保护故障的机器，正常机器不误动作，保证供电连续性</li>
+<li>保护发生后，真正OVP的机器需要能够锁死Latch</li>
+</ol>
+
+<p></p>
+    </article>
+    
+    <article>
+        <h3><a href="http://www.WattLab.net/daily_report_20190618_%E7%BA%BF%E8%B7%AF%E7%9A%84prorogation-delay/">20190618, 线路的Prorogation Delay</a> - 2019-06-18 22:49:13</h3>
+        <p>在进行电路的设计时，往往需要匹配各个信号的先后逻辑问题，因此需要计算电路中的传输时延。</p>
+
+<p>目前能想到的主要是
+1. 暂态电路分析
+2. 传递函数中的相位角分析</p>
+
+<p></p>
+    </article>
+    
+    <article>
+        <h3><a href="http://www.WattLab.net/daily_report_20190621_llc-%E7%BA%BF%E8%B7%AF%E7%9A%84%E6%9C%80%E4%BD%8E%E5%B7%A5%E4%BD%9C%E9%A2%91%E7%8E%87/">20190621, LLC的最低工作频率</a> - 2019-06-21 22:09:13</h3>
+        <p>LLC设计过程中，需要设计机器的频率范围。</p>
+
+<p>最低频率在的确定有以下几个方面的考虑</p>
+
+<ol>
+<li>增益的单调性</li>
+<li>变压器的体积</li>
+<li>机器的容性区
+
+<ol>
+<li>启动</li>
+<li>切载</li>
+<li>短路</li>
+</ol></li>
+</ol>
+
+<p></p>
+    </article>
+    
+    <article>
+        <h3><a href="http://www.WattLab.net/daily_report_20190626_%E7%94%B5%E6%B5%81%E5%B3%B0%E5%80%BC%E6%8E%A7%E5%88%B6%E7%9A%84%E6%96%9C%E5%9D%A1%E8%A1%A5%E5%81%BF/">20190626, 电流峰值控制的斜坡补偿</a> - 2019-06-26 22:49:13</h3>
+        <p>在电流峰值控制(Peak Current Control)中，如果占空比大于50%，会产生次谐波震荡，目前的常用做法是对电流采样信号加入斜坡补偿(Slope Compensation)。</p>
+
+<h4 id="次谐波震荡">次谐波震荡</h4>
+
+<h4 id="斜坡补偿">斜坡补偿</h4>
+
+<p>理论分析，电路设计</p>
+
+<p>补偿的斜率问题，补偿的饱和问题。
+补偿中的抖动问题。
+</p>
+    </article>
+    
+    <article>
+        <h3><a href="http://www.WattLab.net/daily_report_20190627_rc%E6%8C%AF%E8%8D%A1%E5%99%A8%E4%B8%AD%E7%9A%84%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/">20190627, RC振荡器中的同步问题</a> - 2019-06-27 22:29:13</h3>
+        <p>在多台机器进行interleaving时，需要匹配各个拓扑的时序问题，需要对振荡器进行同步</p>
+
+<p>同步过程和RC信号的幅值</p>
+
+<h4 id="斜坡补偿">斜坡补偿</h4>
+
+<p>理论分析，电路设计</p>
 
 <p></p>
     </article>

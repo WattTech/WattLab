@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rc Oscillator on WattLab</title>
+    <link>http://www.WattLab.net/tags/rc-oscillator/</link>
+    <description>Recent content in Rc Oscillator on WattLab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2019 22:29:13 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.WattLab.net/tags/rc-oscillator/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>20190627, RC振荡器中的同步问题</title>
+      <link>http://www.WattLab.net/daily_report_20190627_rc%E6%8C%AF%E8%8D%A1%E5%99%A8%E4%B8%AD%E7%9A%84%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Thu, 27 Jun 2019 22:29:13 +0800</pubDate>
+      
+      <guid>http://www.WattLab.net/daily_report_20190627_rc%E6%8C%AF%E8%8D%A1%E5%99%A8%E4%B8%AD%E7%9A%84%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/</guid>
+      <description>&lt;p&gt;在多台机器进行interleaving时，需要匹配各个拓扑的时序问题，需要对振荡器进行同步&lt;/p&gt;
+
+&lt;p&gt;同步过程和RC信号的幅值&lt;/p&gt;
+
+&lt;h4 id=&#34;斜坡补偿&#34;&gt;斜坡补偿&lt;/h4&gt;
+
+&lt;p&gt;理论分析，电路设计&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

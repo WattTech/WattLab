@@ -6,22 +6,24 @@
     <description>Recent content in Llc on WattLab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 13 Jun 2019 22:19:54 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Jun 2019 22:19:14 +0800</lastBuildDate>
     
 	<atom:link href="http://www.WattLab.net/tags/llc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>20190613, State-Plane Analysis</title>
-      <link>http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis/</link>
-      <pubDate>Thu, 13 Jun 2019 22:19:54 +0800</pubDate>
+      <title>20190610, 驱动电阻过热</title>
+      <link>http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/</link>
+      <pubDate>Tue, 11 Jun 2019 22:19:14 +0800</pubDate>
       
-      <guid>http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis/</guid>
-      <description>&lt;script type=&#34;text/javascript&#34; src=&#34;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default&#34;&gt;&lt;/script&gt;
+      <guid>http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/</guid>
+      <description>&lt;h3 id=&#34;daily-issue-llc-驱动电阻过热&#34;&gt;Daily Issue: LLC 驱动电阻过热&lt;/h3&gt;
 
-&lt;p&gt;$$J&lt;em&gt;\alpha(x) = \sum&lt;/em&gt;{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha}$$&lt;/p&gt;
-
-&lt;p&gt;最近遇到LLC OCP设置问题，查到李泽元先生的一篇文章，Digital Implementation of Soft Start-Up and Short-Circuit Protection for High-Frequency LLC Converters With Optimal Trajectory Control&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, 看不太懂其中的Optimal Trajectory Control, 因此摸到了Weiyi Feng的博士论文State-Trajectory Analysis and Control of LLC Resonant Converters&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;，但这篇文章也没有Trajectory Control的详细说明，从参考文献中找到下面三篇文章&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:4&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:5&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:5&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:6&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:6&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;，可以仔细看看。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;开通过程的Miller Plateau&lt;/li&gt;
+&lt;li&gt;关断过程的Miller Plateau&lt;/li&gt;
+&lt;li&gt;高频时的类Droop特性是否有作用&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -45,17 +47,36 @@
     </item>
     
     <item>
-      <title>20190610, 驱动电阻过热</title>
-      <link>http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/</link>
-      <pubDate>Tue, 11 Jun 2019 22:19:14 +0800</pubDate>
+      <title>20190613, State-Plane Analysis</title>
+      <link>http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis/</link>
+      <pubDate>Thu, 13 Jun 2019 22:19:54 +0800</pubDate>
       
-      <guid>http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/</guid>
-      <description>&lt;h3 id=&#34;daily-issue-llc-驱动电阻过热&#34;&gt;Daily Issue: LLC 驱动电阻过热&lt;/h3&gt;
+      <guid>http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis/</guid>
+      <description>&lt;p&gt;最近遇到LLC OCP设置问题，查到李泽元先生的一篇文章，Digital Implementation of Soft Start-Up and Short-Circuit Protection for High-Frequency LLC Converters With Optimal Trajectory Control&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, 看不太懂其中的Optimal Trajectory Control, 因此摸到了Weiyi Feng的博士论文State-Trajectory Analysis and Control of LLC Resonant Converters&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;，但这篇文章也没有Trajectory Control的详细说明，从参考文献中找到下面三篇文章&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:4&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:5&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:5&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:6&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:6&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;，可以仔细看看。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>20190621, LLC的最低工作频率</title>
+      <link>http://www.WattLab.net/daily_report_20190621_llc-%E7%BA%BF%E8%B7%AF%E7%9A%84%E6%9C%80%E4%BD%8E%E5%B7%A5%E4%BD%9C%E9%A2%91%E7%8E%87/</link>
+      <pubDate>Fri, 21 Jun 2019 22:09:13 +0800</pubDate>
+      
+      <guid>http://www.WattLab.net/daily_report_20190621_llc-%E7%BA%BF%E8%B7%AF%E7%9A%84%E6%9C%80%E4%BD%8E%E5%B7%A5%E4%BD%9C%E9%A2%91%E7%8E%87/</guid>
+      <description>&lt;p&gt;LLC设计过程中，需要设计机器的频率范围。&lt;/p&gt;
+
+&lt;p&gt;最低频率在的确定有以下几个方面的考虑&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;开通过程的Miller Plateau&lt;/li&gt;
-&lt;li&gt;关断过程的Miller Plateau&lt;/li&gt;
-&lt;li&gt;高频时的类Droop特性是否有作用&lt;/li&gt;
+&lt;li&gt;增益的单调性&lt;/li&gt;
+&lt;li&gt;变压器的体积&lt;/li&gt;
+&lt;li&gt;机器的容性区
+
+&lt;ol&gt;
+&lt;li&gt;启动&lt;/li&gt;
+&lt;li&gt;切载&lt;/li&gt;
+&lt;li&gt;短路&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

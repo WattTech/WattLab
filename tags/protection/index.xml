@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Protection on WattLab</title>
+    <link>http://www.WattLab.net/tags/protection/</link>
+    <description>Recent content in Protection on WattLab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 14 Jun 2019 22:49:13 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.WattLab.net/tags/protection/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>20190614, 选择性OVP</title>
+      <link>http://www.WattLab.net/daily_report_20190614_%E9%80%89%E6%8B%A9%E6%80%A7ovp/</link>
+      <pubDate>Fri, 14 Jun 2019 22:49:13 +0800</pubDate>
+      
+      <guid>http://www.WattLab.net/daily_report_20190614_%E9%80%89%E6%8B%A9%E6%80%A7ovp/</guid>
+      <description>&lt;h4 id=&#34;输出的ovp&#34;&gt;输出的OVP&lt;/h4&gt;
+
+&lt;p&gt;输出的OVP主要是保证， 在机器故障输出高压时，能可靠切断故障机器，防止后级电路烧坏或保护。&lt;/p&gt;
+
+&lt;p&gt;OVP的保护要实现：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;速度够快，将输出BUS上的电压限定到安全范围内；&lt;/li&gt;
+&lt;li&gt;应具有选择性，只保护故障的机器，正常机器不误动作，保证供电连续性&lt;/li&gt;
+&lt;li&gt;保护发生后，真正OVP的机器需要能够锁死Latch&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+    <base href="/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="author" content="Rujun Qi">
+
+<meta name="description" content="">
+
+<title>20190618, 线路的Prorogation Delay</title>
+<meta name="generator" content="Hugo 0.30.2" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/pojoaque.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
+<link  href="http://www.WattLab.net/css/theme.min.css" rel="stylesheet" type="text/css">
+
+	<meta charset="utf-8" />
+	<meta name="keywords" content="WattLab" />
+	<meta name="description" content="WattLab is created for switch mode power supply." />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+<div class="page-container container-fluid">
+<div class="col-md-3 menu">
+    <nav class="col-md-3">
+    <h3 class="home-link"><a href="http://www.WattLab.net">Root</a></h3>
+    <div id="last-posts" class="open">
+        <h3 data-open="last-posts">WattLab - Most recent posts</h3>
+        <ul>
+            
+            <li><a href="http://www.WattLab.net/%E5%BF%99%E7%A2%8C%E7%9A%84%E6%84%8F%E4%B9%89/">忙碌的意义</a></li>
+            
+            <li><a href="http://www.WattLab.net/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E7%AE%A1%E7%90%86%E8%BF%99%E4%B8%AA%E7%BD%91%E7%AB%99/">如何使用Hugo管理这个网站</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/">20190610, 驱动电阻过热</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190611_over_current_protection/">20190612, LLC线路的OCP保护</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis/">20190613, State-Plane Analysis</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190614_%E9%80%89%E6%8B%A9%E6%80%A7ovp/">20190614, 选择性OVP</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190618_%E7%BA%BF%E8%B7%AF%E7%9A%84prorogation-delay/">20190618, 线路的Prorogation Delay</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190621_llc-%E7%BA%BF%E8%B7%AF%E7%9A%84%E6%9C%80%E4%BD%8E%E5%B7%A5%E4%BD%9C%E9%A2%91%E7%8E%87/">20190621, LLC的最低工作频率</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190626_%E7%94%B5%E6%B5%81%E5%B3%B0%E5%80%BC%E6%8E%A7%E5%88%B6%E7%9A%84%E6%96%9C%E5%9D%A1%E8%A1%A5%E5%81%BF/">20190626, 电流峰值控制的斜坡补偿</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190627_rc%E6%8C%AF%E8%8D%A1%E5%99%A8%E4%B8%AD%E7%9A%84%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/">20190627, RC振荡器中的同步问题</a></li>
+            
+        </ul>
+    </div>
+
+    
+    <div id="tags" class="open">
+        <h3 data-open="tags">Tags</h3>
+        <ul class="tags">
+            
+            <li><a href="/tags/buck">buck</a></li>
+            
+            <li><a href="/tags/circuit-analysis">circuit-analysis</a></li>
+            
+            <li><a href="/tags/hugo">hugo</a></li>
+            
+            <li><a href="/tags/llc">llc</a></li>
+            
+            <li><a href="/tags/peak-current-control">peak-current-control</a></li>
+            
+            <li><a href="/tags/protection">protection</a></li>
+            
+            <li><a href="/tags/rc-oscillator">rc-oscillator</a></li>
+            
+            <li><a href="/tags/slope-compensation">slope-compensation</a></li>
+            
+            <li><a href="/tags/smps">smps</a></li>
+            
+        </ul>
+    </div>
+    
+
+    
+    <div id="categories" class="open">
+        <h3 data-open="categories">Categories</h3>
+        <ul class="categories">
+            
+            <li><a href="/categories/%E6%95%99%E7%A8%8B">教程</a></li>
+            
+            <li><a href="/categories/%E6%97%A5%E5%BF%97">日志</a></li>
+            
+            <li><a href="/categories/%E6%9D%82%E6%96%87">杂文</a></li>
+            
+        </ul>
+    </div>
+    
+</nav>
+
+</div>
+<div class="col-md-9 content">
+
+<h1>20190618, 线路的Prorogation Delay</h1>
+<h4>Published 06-18-2019 22:49:13</h4>
+
+<article>
+    <p>在进行电路的设计时，往往需要匹配各个信号的先后逻辑问题，因此需要计算电路中的传输时延。</p>
+
+<p>目前能想到的主要是
+1. 暂态电路分析
+2. 传递函数中的相位角分析</p>
+
+<p></p>
+
+<p>此处引申出一个问题，关于电路的Propagation Delay的计算。
+τ</p>
+
+<p>最近遇到LLC OCP设置问题，查到李泽元先生的一篇文章，Digital Implementation of Soft Start-Up and Short-Circuit Protection for High-Frequency LLC Converters With Optimal Trajectory Control<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>, 看不太懂其中的Optimal Trajectory Control, 因此摸到了Weiyi Feng的博士论文State-Trajectory Analysis and Control of LLC Resonant Converters<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup>，但这篇文章也没有Trajectory Control的详细说明，从参考文献中找到下面三篇文章<sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup><sup class="footnote-ref" id="fnref:4"><a rel="footnote" href="#fn:4">4</a></sup><sup class="footnote-ref" id="fnref:5"><a rel="footnote" href="#fn:5">5</a></sup><sup class="footnote-ref" id="fnref:6"><a rel="footnote" href="#fn:6">6</a></sup>，可以仔细看看。</p>
+
+<p><a href="mailto:qi.rujun@qq.com">Email:qi.rujun@qq.com</a></p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">Fei, Chao &amp; Lee, F.C.Y. &amp; Li, Qiang. (2015). Soft start-up for high frequency LLC resonant converter with optimal trajectory control. Conference Proceedings - IEEE Applied Power Electronics Conference and Exposition - APEC. 2015. 609-615. 10.1109/APEC.2015.7104412. 
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:2">Weiyi, Feng.State-Trajectory Analysis and Control of LLC Resonant Converters[D].Virginia Tech CPES，2013-04-19 <a href="https://vtechworks.lib.vt.edu/handle/10919/19327">https://vtechworks.lib.vt.edu/handle/10919/19327</a>
+ <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+<li id="fn:3">Oruganti, Ramesh &amp; Lee, F.C.Y.. (1985). Resonant Power Processors, Part I&mdash;State Plane Analysis. Industry Applications, IEEE Transactions on. 21. 1453 - 1460. 10.1109/TIA.1985.349602. 
+ <a class="footnote-return" href="#fnref:3"><sup>[return]</sup></a></li>
+<li id="fn:4">Oruganti, Ramesh &amp; Lee, F.C.Y.. (1985). Resonant Power Processors, Part II-Methods of Control. Industry Applications, IEEE Transactions on. IA-21. 1461 - 1471. 10.1109/TIA.1985.349603. 
+ <a class="footnote-return" href="#fnref:4"><sup>[return]</sup></a></li>
+<li id="fn:5">Oruganti, Ramesh.State-Plane Analysis of Resonant Converters[D].Virginia Tech CPES，1987 <a href="https://vtechworks.lib.vt.edu/handle/10919/54755">https://vtechworks.lib.vt.edu/handle/10919/54755</a>
+ <a class="footnote-return" href="#fnref:5"><sup>[return]</sup></a></li>
+<li id="fn:6">Oruganti, Ramesh &amp; J. Yang, James &amp; Lee, F.C.Y.. (1988). Implementation Of Optimal Trajectory Control Of Series Resonant Converter. Power Electronics, IEEE Transactions on. 3. 318 - 327. 10.1109 / 63.17950.
+ <a class="footnote-return" href="#fnref:6"><sup>[return]</sup></a></li>
+</ol>
+</div>
+</article>
+
+
+
+</div>
+</div>
+<script src="http://www.WattLab.net/js/theme.min.js" type="text/javascript"></script>
+
+
+</body>
+</html>
+

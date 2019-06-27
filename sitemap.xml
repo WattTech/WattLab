@@ -3,18 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis/</loc>
-    <lastmod>2019-06-13T22:19:54+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.WattLab.net/daily_report_20190611_over_current_protection/</loc>
-    <lastmod>2019-06-12T23:29:53+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/</loc>
-    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
+    <loc>http://www.WattLab.net/%E5%BF%99%E7%A2%8C%E7%9A%84%E6%84%8F%E4%B9%89/</loc>
+    <lastmod>2016-03-15T09:10:44+08:00</lastmod>
   </url>
   
   <url>
@@ -23,8 +13,43 @@
   </url>
   
   <url>
-    <loc>http://www.WattLab.net/%E5%BF%99%E7%A2%8C%E7%9A%84%E6%84%8F%E4%B9%89/</loc>
-    <lastmod>2016-03-15T09:10:44+08:00</lastmod>
+    <loc>http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/</loc>
+    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.WattLab.net/daily_report_20190611_over_current_protection/</loc>
+    <lastmod>2019-06-12T23:29:53+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis/</loc>
+    <lastmod>2019-06-13T22:19:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.WattLab.net/daily_report_20190614_%E9%80%89%E6%8B%A9%E6%80%A7ovp/</loc>
+    <lastmod>2019-06-14T22:49:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.WattLab.net/daily_report_20190618_%E7%BA%BF%E8%B7%AF%E7%9A%84prorogation-delay/</loc>
+    <lastmod>2019-06-18T22:49:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.WattLab.net/daily_report_20190621_llc-%E7%BA%BF%E8%B7%AF%E7%9A%84%E6%9C%80%E4%BD%8E%E5%B7%A5%E4%BD%9C%E9%A2%91%E7%8E%87/</loc>
+    <lastmod>2019-06-21T22:09:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.WattLab.net/daily_report_20190626_%E7%94%B5%E6%B5%81%E5%B3%B0%E5%80%BC%E6%8E%A7%E5%88%B6%E7%9A%84%E6%96%9C%E5%9D%A1%E8%A1%A5%E5%81%BF/</loc>
+    <lastmod>2019-06-26T22:49:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.WattLab.net/daily_report_20190627_rc%E6%8C%AF%E8%8D%A1%E5%99%A8%E4%B8%AD%E7%9A%84%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2019-06-27T22:29:13+08:00</lastmod>
   </url>
   
   <url>
@@ -33,7 +58,19 @@
   </url>
   
   <url>
+    <loc>http://www.WattLab.net/tags/buck/</loc>
+    <lastmod>2019-06-26T22:49:13+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.WattLab.net/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.WattLab.net/tags/circuit-analysis/</loc>
+    <lastmod>2019-06-18T22:49:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -45,25 +82,49 @@
   
   <url>
     <loc>http://www.WattLab.net/tags/llc/</loc>
-    <lastmod>2019-06-13T22:19:54+08:00</lastmod>
+    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.WattLab.net/tags/peak-current-control/</loc>
+    <lastmod>2019-06-26T22:49:13+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.WattLab.net/tags/protection/</loc>
+    <lastmod>2019-06-14T22:49:13+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.WattLab.net/tags/rc-oscillator/</loc>
+    <lastmod>2019-06-27T22:29:13+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.WattLab.net/tags/slope-compensation/</loc>
+    <lastmod>2019-06-26T22:49:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.WattLab.net/tags/smps/</loc>
-    <lastmod>2019-06-13T22:19:54+08:00</lastmod>
+    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.WattLab.net/tags/</loc>
-    <lastmod>2018-10-28T10:38:47+08:00</lastmod>
+    <lastmod>2019-06-26T22:49:13+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.WattLab.net/</loc>
-    <lastmod>2019-06-13T22:19:54+08:00</lastmod>
+    <lastmod>2016-03-15T09:10:44+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -75,7 +136,7 @@
   
   <url>
     <loc>http://www.WattLab.net/categories/%E6%97%A5%E5%BF%97/</loc>
-    <lastmod>2019-06-13T22:19:54+08:00</lastmod>
+    <lastmod>2019-06-11T22:19:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+    <base href="/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="author" content="Rujun Qi">
+
+<meta name="description" content="">
+
+<title>Slope Compensation</title>
+<meta name="generator" content="Hugo 0.30.2" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/pojoaque.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
+<link  href="http://www.WattLab.net/css/theme.min.css" rel="stylesheet" type="text/css">
+
+	<meta charset="utf-8" />
+	<meta name="keywords" content="WattLab" />
+	<meta name="description" content="WattLab is created for switch mode power supply." />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+<div class="page-container container-fluid">
+<div class="col-md-3 menu">
+    <nav class="col-md-3">
+    <h3 class="home-link"><a href="http://www.WattLab.net">Root</a></h3>
+    <div id="last-posts" class="open">
+        <h3 data-open="last-posts">WattLab - Most recent posts</h3>
+        <ul>
+            
+            <li><a href="http://www.WattLab.net/%E5%BF%99%E7%A2%8C%E7%9A%84%E6%84%8F%E4%B9%89/">忙碌的意义</a></li>
+            
+            <li><a href="http://www.WattLab.net/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E7%AE%A1%E7%90%86%E8%BF%99%E4%B8%AA%E7%BD%91%E7%AB%99/">如何使用Hugo管理这个网站</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/">20190610, 驱动电阻过热</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190611_over_current_protection/">20190612, LLC线路的OCP保护</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis/">20190613, State-Plane Analysis</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190614_%E9%80%89%E6%8B%A9%E6%80%A7ovp/">20190614, 选择性OVP</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190618_%E7%BA%BF%E8%B7%AF%E7%9A%84prorogation-delay/">20190618, 线路的Prorogation Delay</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190621_llc-%E7%BA%BF%E8%B7%AF%E7%9A%84%E6%9C%80%E4%BD%8E%E5%B7%A5%E4%BD%9C%E9%A2%91%E7%8E%87/">20190621, LLC的最低工作频率</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190626_%E7%94%B5%E6%B5%81%E5%B3%B0%E5%80%BC%E6%8E%A7%E5%88%B6%E7%9A%84%E6%96%9C%E5%9D%A1%E8%A1%A5%E5%81%BF/">20190626, 电流峰值控制的斜坡补偿</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190627_rc%E6%8C%AF%E8%8D%A1%E5%99%A8%E4%B8%AD%E7%9A%84%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/">20190627, RC振荡器中的同步问题</a></li>
+            
+        </ul>
+    </div>
+
+    
+    <div id="tags" class="open">
+        <h3 data-open="tags">Tags</h3>
+        <ul class="tags">
+            
+            <li><a href="/tags/buck">buck</a></li>
+            
+            <li><a href="/tags/circuit-analysis">circuit-analysis</a></li>
+            
+            <li><a href="/tags/hugo">hugo</a></li>
+            
+            <li><a href="/tags/llc">llc</a></li>
+            
+            <li><a href="/tags/peak-current-control">peak-current-control</a></li>
+            
+            <li><a href="/tags/protection">protection</a></li>
+            
+            <li><a href="/tags/rc-oscillator">rc-oscillator</a></li>
+            
+            <li><a href="/tags/slope-compensation">slope-compensation</a></li>
+            
+            <li><a href="/tags/smps">smps</a></li>
+            
+        </ul>
+    </div>
+    
+
+    
+    <div id="categories" class="open">
+        <h3 data-open="categories">Categories</h3>
+        <ul class="categories">
+            
+            <li><a href="/categories/%E6%95%99%E7%A8%8B">教程</a></li>
+            
+            <li><a href="/categories/%E6%97%A5%E5%BF%97">日志</a></li>
+            
+            <li><a href="/categories/%E6%9D%82%E6%96%87">杂文</a></li>
+            
+        </ul>
+    </div>
+    
+</nav>
+
+</div>
+<div class="col-md-9 content">
+
+
+<div class="articles-list">
+    
+    <article>
+        <h3><a href="http://www.WattLab.net/daily_report_20190626_%E7%94%B5%E6%B5%81%E5%B3%B0%E5%80%BC%E6%8E%A7%E5%88%B6%E7%9A%84%E6%96%9C%E5%9D%A1%E8%A1%A5%E5%81%BF/">20190626, 电流峰值控制的斜坡补偿</a> - 2019-06-26 22:49:13</h3>
+        <p>在电流峰值控制(Peak Current Control)中，如果占空比大于50%，会产生次谐波震荡，目前的常用做法是对电流采样信号加入斜坡补偿(Slope Compensation)。</p>
+
+<h4 id="次谐波震荡">次谐波震荡</h4>
+
+<h4 id="斜坡补偿">斜坡补偿</h4>
+
+<p>理论分析，电路设计</p>
+
+<p>补偿的斜率问题，补偿的饱和问题。
+补偿中的抖动问题。
+</p>
+    </article>
+    
+</div>
+
+
+</div>
+</div>
+<script src="http://www.WattLab.net/js/theme.min.js" type="text/javascript"></script>
+
+
+</body>
+</html>
+

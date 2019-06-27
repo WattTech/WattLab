@@ -21,7 +21,6 @@
 	<meta name="keywords" content="WattLab" />
 	<meta name="description" content="WattLab is created for switch mode power supply." />
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 </head>
 <body>
 <div class="page-container container-fluid">
@@ -32,17 +31,25 @@
         <h3 data-open="last-posts">WattLab - Most recent posts</h3>
         <ul>
             
-            <li><a href="http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis/">20190613, State-Plane Analysis</a></li>
-            
-            <li><a href="http://www.WattLab.net/daily_report_20190611_over_current_protection/">20190612, LLC线路的OCP保护</a></li>
-            
-            <li><a href="http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/">20190610, 驱动电阻过热</a></li>
+            <li><a href="http://www.WattLab.net/%E5%BF%99%E7%A2%8C%E7%9A%84%E6%84%8F%E4%B9%89/">忙碌的意义</a></li>
             
             <li><a href="http://www.WattLab.net/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E7%AE%A1%E7%90%86%E8%BF%99%E4%B8%AA%E7%BD%91%E7%AB%99/">如何使用Hugo管理这个网站</a></li>
             
-            <li><a href="http://www.WattLab.net/%E5%BF%99%E7%A2%8C%E7%9A%84%E6%84%8F%E4%B9%89/">忙碌的意义</a></li>
+            <li><a href="http://www.WattLab.net/daily_report_20190610_highline_highfrequency_resdriver/">20190610, 驱动电阻过热</a></li>
             
-            <li><a href="http://www.WattLab.net/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/">写在前面</a></li>
+            <li><a href="http://www.WattLab.net/daily_report_20190611_over_current_protection/">20190612, LLC线路的OCP保护</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190613_trajector_plane_analysis/">20190613, State-Plane Analysis</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190614_%E9%80%89%E6%8B%A9%E6%80%A7ovp/">20190614, 选择性OVP</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190618_%E7%BA%BF%E8%B7%AF%E7%9A%84prorogation-delay/">20190618, 线路的Prorogation Delay</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190621_llc-%E7%BA%BF%E8%B7%AF%E7%9A%84%E6%9C%80%E4%BD%8E%E5%B7%A5%E4%BD%9C%E9%A2%91%E7%8E%87/">20190621, LLC的最低工作频率</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190626_%E7%94%B5%E6%B5%81%E5%B3%B0%E5%80%BC%E6%8E%A7%E5%88%B6%E7%9A%84%E6%96%9C%E5%9D%A1%E8%A1%A5%E5%81%BF/">20190626, 电流峰值控制的斜坡补偿</a></li>
+            
+            <li><a href="http://www.WattLab.net/daily_report_20190627_rc%E6%8C%AF%E8%8D%A1%E5%99%A8%E4%B8%AD%E7%9A%84%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/">20190627, RC振荡器中的同步问题</a></li>
             
         </ul>
     </div>
@@ -52,9 +59,21 @@
         <h3 data-open="tags">Tags</h3>
         <ul class="tags">
             
+            <li><a href="/tags/buck">buck</a></li>
+            
+            <li><a href="/tags/circuit-analysis">circuit-analysis</a></li>
+            
             <li><a href="/tags/hugo">hugo</a></li>
             
             <li><a href="/tags/llc">llc</a></li>
+            
+            <li><a href="/tags/peak-current-control">peak-current-control</a></li>
+            
+            <li><a href="/tags/protection">protection</a></li>
+            
+            <li><a href="/tags/rc-oscillator">rc-oscillator</a></li>
+            
+            <li><a href="/tags/slope-compensation">slope-compensation</a></li>
             
             <li><a href="/tags/smps">smps</a></li>
             
@@ -85,56 +104,9 @@
 <h4>Published 06-13-2019 22:19:54</h4>
 
 <article>
-
-
-<p>$$J<em>\alpha(x) = \sum</em>{m=0}^\infty \frac{(-1)^m}{m! \Gamma (m + \alpha + 1)} {\left({ \frac{x}{2} }\right)}^{2m + \alpha}$$</p>
-
-<p>最近遇到LLC OCP设置问题，查到李泽元先生的一篇文章，Digital Implementation of Soft Start-Up and Short-Circuit Protection for High-Frequency LLC Converters With Optimal Trajectory Control<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>, 看不太懂其中的Optimal Trajectory Control, 因此摸到了Weiyi Feng的博士论文State-Trajectory Analysis and Control of LLC Resonant Converters<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup>，但这篇文章也没有Trajectory Control的详细说明，从参考文献中找到下面三篇文章<sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup><sup class="footnote-ref" id="fnref:4"><a rel="footnote" href="#fn:4">4</a></sup><sup class="footnote-ref" id="fnref:5"><a rel="footnote" href="#fn:5">5</a></sup><sup class="footnote-ref" id="fnref:6"><a rel="footnote" href="#fn:6">6</a></sup>，可以仔细看看。</p>
+    <p>最近遇到LLC OCP设置问题，查到李泽元先生的一篇文章，Digital Implementation of Soft Start-Up and Short-Circuit Protection for High-Frequency LLC Converters With Optimal Trajectory Control<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>, 看不太懂其中的Optimal Trajectory Control, 因此摸到了Weiyi Feng的博士论文State-Trajectory Analysis and Control of LLC Resonant Converters<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup>，但这篇文章也没有Trajectory Control的详细说明，从参考文献中找到下面三篇文章<sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup><sup class="footnote-ref" id="fnref:4"><a rel="footnote" href="#fn:4">4</a></sup><sup class="footnote-ref" id="fnref:5"><a rel="footnote" href="#fn:5">5</a></sup><sup class="footnote-ref" id="fnref:6"><a rel="footnote" href="#fn:6">6</a></sup>，可以仔细看看。</p>
 
 <p></p>
-
-<h3 id="为什么要进行ocp保护">为什么要进行OCP保护</h3>
-
-<blockquote>
-<p>The purpose of over current protection is to limit the current stress in the system during over load or short circuit condition, also to limit the inrush current during start up when output voltage is zero so that the power converter can be protected from destructive damage under those conditions.<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup></p>
-</blockquote>
-
-<p>OCP保护的主要作用是，当机器异常时，保证MOSFET的安全，确保机器状态可控。特别是在机器短路时，电流过大会导致MOSFET不在安全工作区。</p>
-
-<h3 id="llc有哪些保护方式">LLC有哪些保护方式</h3>
-
-<blockquote>
-<ol>
-<li>First method is increasing the switching frequency.</li>
-<li>The second method, a combination of variable-frequency-control and PWM control is used to achieve over current protection.</li>
-<li>In the last method, the power stage is modified to include current limiting function into the converter.<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup><br /></li>
-</ol>
-</blockquote>
-
-<p>从实际见到的保护来看，目前使用的主要是第一种。上面的第三种是说将Cr电容分开，并且加二极管进行钳位，这在半桥中已经都在使用，并且一般会加额外的过流保护。
-Wang Bo的论文里对这三种方式的优缺点进行了总结。</p>
-
-<h3 id="llc保护点的设置">LLC保护点的设置</h3>
-
-<p>比较直白的保护方式为，直接采样原边的电流，然后根据不同的电流值动作去做不同的动作。
-在使用模拟电路进行保护时，频率的调节时靠压控振荡器（VCO）来实现。15kW的机器使用了三级的过流保护。</p>
-
-<ol>
-<li>第一级电流保护的点比较低，当触发到时，会将环路部分的反馈推高，以此提高LLC的工作频率，但这级保护动作会比较慢。具体这级保护到那种程度，没有仔细看过。</li>
-<li>第二级电流保护的点稍高，当触发时，会直接推到环路之后，使频率快速的提上去。并不是直接提到最高，实际的值是实验得出的。</li>
-<li>第三级电流保护主要是应对短路的，这级的保护点最高，触发之后直接会将驱动拉掉。由于第三级的保护点最高，因此第三级动作时，前两级已经动作了。</li>
-</ol>
-
-<h3 id="存在哪些问题">存在哪些问题</h3>
-
-<p>目前来讲，OCP设置点主要有下面两个问题：</p>
-
-<ol>
-<li>OCP点不可以设置的过小。在触发OCP保护之后，机器往往很难退出这种状态，导致无输出。</li>
-<li>OCP点不可以设置的过大。如果OCP点设置的过大，短路发生时，MOSFET会关断过流，过大的di/dt会导致MOSFET因应力过高而损坏。</li>
-</ol>
-
-<p>OCP点具体的设置需要根据上面这两点折中，如果没有理论的计算，往往需要试很多次。</p>
 
 <p><a href="mailto:qi.rujun@qq.com">Email:qi.rujun@qq.com</a></p>
 <div class="footnotes">
